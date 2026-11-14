@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# BEACON COMPUTING INITIATIVE | Developer Seal: CJB-DEV-2026
+# Optional reminder only. SHA-256 in repository-root SHA256SUMS.
+branch="$(git symbolic-ref -q --short HEAD 2>/dev/null || true)"
+[[ -n "$branch" && "$branch" != main && "$branch" != master ]] || exit 0
+git rev-parse -q --verify refs/remotes/origin/main >/dev/null 2>&1 || exit 0
+base="$(git rev-parse origin/main)"
+[[ "$(git merge-base "$base" HEAD)" == "$base" ]] || exit 0
+if [[ "$(git rev-list --count "$base..HEAD")" == 5 ]]; then
+  printf '\nORBIT11 / CJB-DEV-2026: five commits collected. Review and run scripts/squash-five.sh.\n'
+fi
+exit 0

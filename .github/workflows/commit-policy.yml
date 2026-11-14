@@ -1,0 +1,32 @@
+# BEACON COMPUTING INITIATIVE | Developer Seal: CJB-DEV-2026
+# SHA-256 recorded in root SHA256SUMS
+name: ORBIT11 commit policy
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+  push:
+    branches: [main]
+permissions:
+  contents: read
+  pull-requests: read
+jobs:
+  shell-syntax:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate guarded scripts
+        run: bash -n scripts/squash-five.sh .githooks/post-commit
+  single-commit:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify grouped PR history
+        env:
+          COUNT: ${{ github.event.pull_request.commits }}
+        run: |
+          if [[ "$COUNT" -eq 1 ]]; then
+            echo "PASS: one logical commit in PR"
+          else
+            echo "::error::Expected one consolidated commit, got $COUNT"
+            exit 1
+          fi
