@@ -1,0 +1,42 @@
+# BEACON COMPUTING INITIATIVE
+# Developer Seal: CJB-DEV-2026
+# ORBIT11 - never track local evidence, credentials, caches, models or runtime state.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.sqlite
+*.sqlite3
+*.sqlite-*
+*.db
+*.db-*
+*.pcap
+*.pcapng
+*.etl
+*.har
+*.core
+core.*
+*.log
+*.log.*
+evidence/
+forensics/
+secrets/
+captures/
+runtime/
+training-data/
+models/private/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+node_modules/
+build/
+dist/
+*.egg-info/
+.DS_Store

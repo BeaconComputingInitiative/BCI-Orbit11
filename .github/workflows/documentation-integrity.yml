@@ -1,0 +1,17 @@
+# BEACON COMPUTING INITIATIVE
+# Developer Seal: CJB-DEV-2026
+# Documentation gate passes if and only if every listed digest matches the checkout.
+name: Documentation integrity
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  sha256:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Verify tracked documentation snapshot
+        run: sha256sum --check --strict SHA256SUMS
