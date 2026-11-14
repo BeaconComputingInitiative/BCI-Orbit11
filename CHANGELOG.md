@@ -19,3 +19,11 @@
 ## Initial repository
 
 - README-only initial commit before documentation expansion.
+
+## Experimental source integration — 2026-11-14 UTC
+
+Added five versioned Orbital component groups with source provenance, 107 passing
+tests and an 11-page offscreen GUI smoke result. Added current implementation/model
+and operations documentation. Preserved the prior documentation-first tree under
+docs/specification and retained its nonconflicting governance and target documents.
+No installed services, runtime state, private datasets or model weights were migrated.

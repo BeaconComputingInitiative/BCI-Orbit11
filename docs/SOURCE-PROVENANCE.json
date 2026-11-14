@@ -1,0 +1,469 @@
+{
+  "header": "BEACON COMPUTING INITIATIVE",
+  "developer_seal": "CJB-DEV-2026",
+  "repository": "BCI-Orbit11",
+  "files": [
+    {
+      "path": "components/console/README.md",
+      "source_release": "BCI-Orbital-PyQt6-v0.8.3",
+      "source_relative_path": "README.md",
+      "sha256": "83d08b1f80c54b413e74a9945437765279f31db5e0b388f08b8c6f5fb916277a",
+      "source_modified": false
+    },
+    {
+      "path": "components/console/assets/orbital-globe-exact.png",
+      "source_release": "BCI-Orbital-PyQt6-v0.8.3",
+      "source_relative_path": "assets/orbital-globe-exact.png",
+      "sha256": "26136ad4f714c66c628a727ae3561a23b8a338f77b1278db6a2bec08d179d65b",
+      "source_modified": false
+    },
+    {
+      "path": "components/console/scripts/gui_smoke.py",
+      "source_release": "BCI-Orbital-PyQt6-v0.8.3",
+      "source_relative_path": "scripts/gui_smoke.py",
+      "sha256": "0350919ed988672f1a5194cef844d6e36eca436d73d5508a4544f5b671817685",
+      "source_modified": false
+    },
+    {
+      "path": "components/console/scripts/import-trained-model.sh",
+      "source_release": "BCI-Orbital-PyQt6-v0.8.3",
+      "source_relative_path": "scripts/import-trained-model.sh",
+      "sha256": "e3aaeb2e6a329a6988baba92e546dae6c297258321ffd5894d056f2eecd672f0",
+      "source_modified": false
+    },
+    {
+      "path": "components/console/scripts/install.sh",
+      "source_release": "BCI-Orbital-PyQt6-v0.8.3",
+      "source_relative_path": "scripts/install.sh",
+      "sha256": "1265071aa4e8597dd764954f38585bf2c1ac91f66ac33344c0abfe38d8eca619",
+      "source_modified": false
+    },
+    {
+      "path": "components/console/scripts/packet-quota-guard.sh",
+      "source_release": "BCI-Orbital-PyQt6-v0.8.3",
+      "source_relative_path": "scripts/packet-quota-guard.sh",
+      "sha256": "b80e84cc8190486395d7d54ffffc373b3439f07ef1b927c88bc9153f839025d5",
+      "source_modified": false
+    },
+    {
+      "path": "components/console/src/orbital_actions.py",
+      "source_release": "BCI-Orbital-PyQt6-v0.8.3",
+      "source_relative_path": "src/orbital_actions.py",
+      "sha256": "08217feb2c08d12ca883c2f89b2e8e26df6c7b3f937b43d9342461c843c4d1f7",
+      "source_modified": false
+    },
+    {
+      "path": "components/console/src/orbital_ai.py",
+      "source_release": "BCI-Orbital-PyQt6-v0.8.3",
+      "source_relative_path": "src/orbital_ai.py",
+      "sha256": "f1aa0fd8f8a15fe1772b55620ff7de5b9e47e85db14bd6775e25f668b8577c29",
+      "source_modified": false
+    },
+    {
+      "path": "components/console/src/orbital_backend.py",
+      "source_release": "BCI-Orbital-PyQt6-v0.8.3",
+      "source_relative_path": "src/orbital_backend.py",
+      "sha256": "7e3d089a58ed8769fef3ce54436492a526fff856395e96934c8829fffd354d8d",
+      "source_modified": false
+    },
+    {
+      "path": "components/console/src/orbital_cli.py",
+      "source_release": "BCI-Orbital-PyQt6-v0.8.3",
+      "source_relative_path": "src/orbital_cli.py",
+      "sha256": "fd7dff0f66ff1d9d4a222700f959724ac1ad0ccbd57b86ce6b8e920cf51c0d3a",
+      "source_modified": false
+    },
+    {
+      "path": "components/console/src/orbital_gui.py",
+      "source_release": "BCI-Orbital-PyQt6-v0.8.3",
+      "source_relative_path": "src/orbital_gui.py",
+      "sha256": "b1184552aefef4c83ab9c91cb9c8f4b400a5cbf60143bd3531580e4f18026305",
+      "source_modified": false
+    },
+    {
+      "path": "components/console/tests/test_actions.py",
+      "source_release": "BCI-Orbital-PyQt6-v0.8.3",
+      "source_relative_path": "tests/test_actions.py",
+      "sha256": "181109d741c89bb49fa27605872d4626d8234ea3e5abf0bc777c453cd4a86984",
+      "source_modified": false
+    },
+    {
+      "path": "components/console/tests/test_ai.py",
+      "source_release": "BCI-Orbital-PyQt6-v0.8.3",
+      "source_relative_path": "tests/test_ai.py",
+      "sha256": "448855a5ac31530235c841c4ba328b9f0a192eb1305a9afad6c23d3bf72910e2",
+      "source_modified": false
+    },
+    {
+      "path": "components/console/tests/test_backend.py",
+      "source_release": "BCI-Orbital-PyQt6-v0.8.3",
+      "source_relative_path": "tests/test_backend.py",
+      "sha256": "035ecc29e870d157e7db25591bb1e6718a50ebdbaef70e25a2fac6bd39475668",
+      "source_modified": false
+    },
+    {
+      "path": "components/console/tests/test_remediation.py",
+      "source_release": "BCI-Orbital-PyQt6-v0.8.3",
+      "source_relative_path": "tests/test_remediation.py",
+      "sha256": "8265e259b6b9c22227026faf14fa3f1164b757b4c725f9645056856d05675b72",
+      "source_modified": false
+    },
+    {
+      "path": "components/neural/README.md",
+      "source_release": "BCI-Orbital-NeuralCore-v0.2.0",
+      "source_relative_path": "README.md",
+      "sha256": "ac32d481e54d4de18c81050e6b9a887d863ff37e56ed2731b4e8c3a13e32f75f",
+      "source_modified": false
+    },
+    {
+      "path": "components/neural/docs/ARCHITECTURE.md",
+      "source_release": "BCI-Orbital-NeuralCore-v0.2.0",
+      "source_relative_path": "docs/ARCHITECTURE.md",
+      "sha256": "be2c4c7fd7d7b14073753f88f6dba6a2136b6f9a4f92ff542b8acaa245bc9763",
+      "source_modified": false
+    },
+    {
+      "path": "components/neural/docs/VALIDATION.md",
+      "source_release": "BCI-Orbital-NeuralCore-v0.2.0",
+      "source_relative_path": "docs/VALIDATION.md",
+      "sha256": "51a1c0dc4e7153c4df1927eef219a1886819e90090eea13c77e2d9e7ce8e98a0",
+      "source_modified": false
+    },
+    {
+      "path": "components/neural/examples/events.jsonl",
+      "source_release": "BCI-Orbital-NeuralCore-v0.2.0",
+      "source_relative_path": "examples/events.jsonl",
+      "sha256": "f12450b6b3071fa91345afa45a82024724da4157e072d17b5fe537ccc2665e27",
+      "source_modified": false
+    },
+    {
+      "path": "components/neural/scripts/install.sh",
+      "source_release": "BCI-Orbital-NeuralCore-v0.2.0",
+      "source_relative_path": "scripts/install.sh",
+      "sha256": "d6b0891b2ec902d7594272093ee5cb2119ec75609095001d2f60a48639a333a6",
+      "source_modified": false
+    },
+    {
+      "path": "components/neural/src/bci_neural/__init__.py",
+      "source_release": "BCI-Orbital-NeuralCore-v0.2.0",
+      "source_relative_path": "src/bci_neural/__init__.py",
+      "sha256": "8c0d13e867a61290c3a09c21d51f6e3f37f068f6246323aa17d8bd5f0aea036c",
+      "source_modified": false
+    },
+    {
+      "path": "components/neural/src/bci_neural/__main__.py",
+      "source_release": "BCI-Orbital-NeuralCore-v0.2.0",
+      "source_relative_path": "src/bci_neural/__main__.py",
+      "sha256": "4b7502aab14921cfebc6c3cf0dce03bc663d600e22fc49ba399e00176d097cb2",
+      "source_modified": false
+    },
+    {
+      "path": "components/neural/src/bci_neural/cli.py",
+      "source_release": "BCI-Orbital-NeuralCore-v0.2.0",
+      "source_relative_path": "src/bci_neural/cli.py",
+      "sha256": "0b68db60be1e116c04ac3a3d5065918605fa45d559c760e9a48f95b4d135e86c",
+      "source_modified": false
+    },
+    {
+      "path": "components/neural/src/bci_neural/common.py",
+      "source_release": "BCI-Orbital-NeuralCore-v0.2.0",
+      "source_relative_path": "src/bci_neural/common.py",
+      "sha256": "16745ae887327b818c713b96fbe8dcd53389bfc062357044022fb61fd70defeb",
+      "source_modified": false
+    },
+    {
+      "path": "components/neural/src/bci_neural/journal.py",
+      "source_release": "BCI-Orbital-NeuralCore-v0.2.0",
+      "source_relative_path": "src/bci_neural/journal.py",
+      "sha256": "dcaeaa27663df235012ca9d9b9257e4a57bda1fddf37206cd25e232dad0b0708",
+      "source_modified": false
+    },
+    {
+      "path": "components/neural/src/bci_neural/model.py",
+      "source_release": "BCI-Orbital-NeuralCore-v0.2.0",
+      "source_relative_path": "src/bci_neural/model.py",
+      "sha256": "857893a3b723c0d68343bcf87d72fa3854053afdcaf8e4f22eb9e77f1c60358c",
+      "source_modified": false
+    },
+    {
+      "path": "components/neural/src/bci_neural/reason.py",
+      "source_release": "BCI-Orbital-NeuralCore-v0.2.0",
+      "source_relative_path": "src/bci_neural/reason.py",
+      "sha256": "d07dec406313c8f4eb531c8609c24e78202aee304ae5c61f31ba52f937d000c9",
+      "source_modified": false
+    },
+    {
+      "path": "components/neural/src/bci_neural/sources.py",
+      "source_release": "BCI-Orbital-NeuralCore-v0.2.0",
+      "source_relative_path": "src/bci_neural/sources.py",
+      "sha256": "4990a6423bc55afad39e588118f7a9fcd69e7a45289d01cedc3922b9a37cd394",
+      "source_modified": false
+    },
+    {
+      "path": "components/neural/systemd/bci-orbital-neural.user.service",
+      "source_release": "BCI-Orbital-NeuralCore-v0.2.0",
+      "source_relative_path": "systemd/bci-orbital-neural.user.service",
+      "sha256": "31d683235845a14f5cdee81e1c54627ee2308458b10011b546f782ba6d56aff5",
+      "source_modified": false
+    },
+    {
+      "path": "components/neural/systemd/bci-orbital-neural.user.timer",
+      "source_release": "BCI-Orbital-NeuralCore-v0.2.0",
+      "source_relative_path": "systemd/bci-orbital-neural.user.timer",
+      "sha256": "8dd89666aa0cfe39409040eebe1dfcdc662e68656e44726449905e7a43df23ea",
+      "source_modified": false
+    },
+    {
+      "path": "components/neural/tests/test_neural.py",
+      "source_release": "BCI-Orbital-NeuralCore-v0.2.0",
+      "source_relative_path": "tests/test_neural.py",
+      "sha256": "dd805715131bf3091bc9f975867734ac926b6a85b3621c11a9e240316eb49278",
+      "source_modified": false
+    },
+    {
+      "path": "components/host/README.md",
+      "source_release": "BCI-Orbital-CyberDefense-v0.1.0",
+      "source_relative_path": "README.md",
+      "sha256": "fcd8d1697e48f019a51dcba0f6dc0d8f909e1c6022904ae705e4b12a4ddb5082",
+      "source_modified": false
+    },
+    {
+      "path": "components/host/docs/OPERATIONS.md",
+      "source_release": "BCI-Orbital-CyberDefense-v0.1.0",
+      "source_relative_path": "docs/OPERATIONS.md",
+      "sha256": "ac5e4fb0dfd920723071af89a827fac29d1577301d62b3320f82f088a107f183",
+      "source_modified": false
+    },
+    {
+      "path": "components/host/docs/VALIDATION.md",
+      "source_release": "BCI-Orbital-CyberDefense-v0.1.0",
+      "source_relative_path": "docs/VALIDATION.md",
+      "sha256": "29154e7ceea1adcf016136d45a4234f556e998d80e1ad0be65abe6ae26cb168f",
+      "source_modified": false
+    },
+    {
+      "path": "components/host/scripts/install.sh",
+      "source_release": "BCI-Orbital-CyberDefense-v0.1.0",
+      "source_relative_path": "scripts/install.sh",
+      "sha256": "ea0b910dda0cd2754d946eaf0175fba862c2ae1a3f1d621aad98838f09c45be7",
+      "source_modified": false
+    },
+    {
+      "path": "components/host/src/bci_orbital/__init__.py",
+      "source_release": "BCI-Orbital-CyberDefense-v0.1.0",
+      "source_relative_path": "src/bci_orbital/__init__.py",
+      "sha256": "13c465ef8f515cdc988aa35b7a7d1407782e406bd964c9fcf9ffe294470a5c09",
+      "source_modified": false
+    },
+    {
+      "path": "components/host/src/bci_orbital/__main__.py",
+      "source_release": "BCI-Orbital-CyberDefense-v0.1.0",
+      "source_relative_path": "src/bci_orbital/__main__.py",
+      "sha256": "d4dc36c30610cff06dc764b090703268394171e5cb02c1b0e492fe38d97f89b6",
+      "source_modified": false
+    },
+    {
+      "path": "components/host/src/bci_orbital/cli.py",
+      "source_release": "BCI-Orbital-CyberDefense-v0.1.0",
+      "source_relative_path": "src/bci_orbital/cli.py",
+      "sha256": "08cd751b1937335f4a1d07f090e016333729da5af83d9b0e8827b9c0e41e82ba",
+      "source_modified": false
+    },
+    {
+      "path": "components/host/src/bci_orbital/engine.py",
+      "source_release": "BCI-Orbital-CyberDefense-v0.1.0",
+      "source_relative_path": "src/bci_orbital/engine.py",
+      "sha256": "123b14f33a5cba1bcfe995c57d2fe0f5467f6a96bc107e6f8ade40b23fd52952",
+      "source_modified": false
+    },
+    {
+      "path": "components/host/src/bci_orbital/reference.json",
+      "source_release": "BCI-Orbital-CyberDefense-v0.1.0",
+      "source_relative_path": "src/bci_orbital/reference.json",
+      "sha256": "1e02ed30990ccb06868779493db6acaf7a78ed04475767fb308c7bd90c90c98a",
+      "source_modified": false
+    },
+    {
+      "path": "components/host/src/bci_orbital/response.py",
+      "source_release": "BCI-Orbital-CyberDefense-v0.1.0",
+      "source_relative_path": "src/bci_orbital/response.py",
+      "sha256": "011ca82af7fce2cb3e3e3e17748296045bb3cfd618209e0f23d494134fd9ebb2",
+      "source_modified": false
+    },
+    {
+      "path": "components/host/src/bci_orbital/sensors.py",
+      "source_release": "BCI-Orbital-CyberDefense-v0.1.0",
+      "source_relative_path": "src/bci_orbital/sensors.py",
+      "sha256": "7738542eaa048b2ca2781263fd0ab90dba28a9aa8e7e6fba73bbef0cfc56c3ac",
+      "source_modified": false
+    },
+    {
+      "path": "components/host/src/bci_orbital/store.py",
+      "source_release": "BCI-Orbital-CyberDefense-v0.1.0",
+      "source_relative_path": "src/bci_orbital/store.py",
+      "sha256": "fa8194b9973ebe1751da127b00f6b6d63a0a62f5b5fe0270342459bacaa205d4",
+      "source_modified": false
+    },
+    {
+      "path": "components/host/systemd/bci-orbital-v2.system.service",
+      "source_release": "BCI-Orbital-CyberDefense-v0.1.0",
+      "source_relative_path": "systemd/bci-orbital-v2.system.service",
+      "sha256": "e33b0db97ecbc041c277364f8c43a3780691e9d47106109383297bd2ac6a761f",
+      "source_modified": false
+    },
+    {
+      "path": "components/host/systemd/bci-orbital-v2.user.service",
+      "source_release": "BCI-Orbital-CyberDefense-v0.1.0",
+      "source_relative_path": "systemd/bci-orbital-v2.user.service",
+      "sha256": "db062c5eb4080664ac62ce64ad48de2b9f68dea711f9eb36cf22ec09d0577b99",
+      "source_modified": false
+    },
+    {
+      "path": "components/host/tests/test_orbital.py",
+      "source_release": "BCI-Orbital-CyberDefense-v0.1.0",
+      "source_relative_path": "tests/test_orbital.py",
+      "sha256": "e5b9dc796862319bac659d5bf19cc10187e7551a9f5141d13de94c40f07d7745",
+      "source_modified": false
+    },
+    {
+      "path": "components/expansion/README.md",
+      "source_release": "BCI-Orbital-Expansion-v0.3.0",
+      "source_relative_path": "README.md",
+      "sha256": "d7ae2738a3960161cc20faf59e4eb5653a69aa0481d0f307bc2e90101d268f87",
+      "source_modified": false
+    },
+    {
+      "path": "components/expansion/docs/CAPABILITY-MATRIX.md",
+      "source_release": "BCI-Orbital-Expansion-v0.3.0",
+      "source_relative_path": "docs/CAPABILITY-MATRIX.md",
+      "sha256": "b6dda50c321e4f158ef71fcbc32de1d770c2f8dceac5f2f092cc8d3cd6d42470",
+      "source_modified": false
+    },
+    {
+      "path": "components/expansion/scripts/group6.sh",
+      "source_release": "BCI-Orbital-Expansion-v0.3.0",
+      "source_relative_path": "scripts/group6.sh",
+      "sha256": "ed4d4e58b94b9569af1d79385b70f6d06d5547410110112e98a2386bb5b6f3f9",
+      "source_modified": false
+    },
+    {
+      "path": "components/expansion/scripts/install.sh",
+      "source_release": "BCI-Orbital-Expansion-v0.3.0",
+      "source_relative_path": "scripts/install.sh",
+      "sha256": "f3dcbc55f2d8847375287ec0106705c7620883defb2e7c7e005fc6c3ffebf626",
+      "source_modified": false
+    },
+    {
+      "path": "components/expansion/src/bci_orbital_expansion/__init__.py",
+      "source_release": "BCI-Orbital-Expansion-v0.3.0",
+      "source_relative_path": "src/bci_orbital_expansion/__init__.py",
+      "sha256": "ab9dbf299234e2b6cd3cfecd0e1491c88088f8bba304f66adb0f2fd6ff497430",
+      "source_modified": false
+    },
+    {
+      "path": "components/expansion/src/bci_orbital_expansion/__main__.py",
+      "source_release": "BCI-Orbital-Expansion-v0.3.0",
+      "source_relative_path": "src/bci_orbital_expansion/__main__.py",
+      "sha256": "05473dccd2965c87432f70eb45913eaf51255de7d60f01622a9474f021e7bd7b",
+      "source_modified": false
+    },
+    {
+      "path": "components/expansion/src/bci_orbital_expansion/bridge.py",
+      "source_release": "BCI-Orbital-Expansion-v0.3.0",
+      "source_relative_path": "src/bci_orbital_expansion/bridge.py",
+      "sha256": "c7cf6e4114fcdc3ab05de5d395e32968f5595bfb672e623d3bb512d42cb42ae5",
+      "source_modified": false
+    },
+    {
+      "path": "components/expansion/src/bci_orbital_expansion/cli.py",
+      "source_release": "BCI-Orbital-Expansion-v0.3.0",
+      "source_relative_path": "src/bci_orbital_expansion/cli.py",
+      "sha256": "0c49365171af510eca426870f1f89ce15df34b8651782aefb2c0e4ab498653c1",
+      "source_modified": false
+    },
+    {
+      "path": "components/expansion/src/bci_orbital_expansion/common.py",
+      "source_release": "BCI-Orbital-Expansion-v0.3.0",
+      "source_relative_path": "src/bci_orbital_expansion/common.py",
+      "sha256": "41febc4dde18a53f7fddc2e01cfdb71b0518df884b53b99cd2873df029445d53",
+      "source_modified": false
+    },
+    {
+      "path": "components/expansion/src/bci_orbital_expansion/context.py",
+      "source_release": "BCI-Orbital-Expansion-v0.3.0",
+      "source_relative_path": "src/bci_orbital_expansion/context.py",
+      "sha256": "9a803bec526929c48fb463c88f762e943819ba109e4d250c7e306eaab05fa733",
+      "source_modified": false
+    },
+    {
+      "path": "components/expansion/src/bci_orbital_expansion/intelligence.py",
+      "source_release": "BCI-Orbital-Expansion-v0.3.0",
+      "source_relative_path": "src/bci_orbital_expansion/intelligence.py",
+      "sha256": "bf9f295ddbb8c67c7d63932c49cc52c9859c68454c7f91a0c4ebdb92f5b2f5cd",
+      "source_modified": false
+    },
+    {
+      "path": "components/expansion/src/bci_orbital_expansion/kernel.py",
+      "source_release": "BCI-Orbital-Expansion-v0.3.0",
+      "source_relative_path": "src/bci_orbital_expansion/kernel.py",
+      "sha256": "e983349abaf58efdff75aca589857e7195f485f2e12a323b5dd21c47bc010eb6",
+      "source_modified": false
+    },
+    {
+      "path": "components/expansion/src/bci_orbital_expansion/packets.py",
+      "source_release": "BCI-Orbital-Expansion-v0.3.0",
+      "source_relative_path": "src/bci_orbital_expansion/packets.py",
+      "sha256": "b0b660c5101e475f9db04d8939cabcd489d71048a6df253d86c99ad312a0d6e7",
+      "source_modified": false
+    },
+    {
+      "path": "components/expansion/src/bci_orbital_expansion/throughput.py",
+      "source_release": "BCI-Orbital-Expansion-v0.3.0",
+      "source_relative_path": "src/bci_orbital_expansion/throughput.py",
+      "sha256": "0c27ec063048e2c34280b0b019c3800ce4bfee879a32c193976155f9decbc18e",
+      "source_modified": false
+    },
+    {
+      "path": "components/expansion/tests/test_expansion.py",
+      "source_release": "BCI-Orbital-Expansion-v0.3.0",
+      "source_relative_path": "tests/test_expansion.py",
+      "sha256": "085bcd70c0b8627c14df6df84554e2c598e34c5c4fa4f0cf2357c51fb44cbf32",
+      "source_modified": false
+    },
+    {
+      "path": "components/rate-aware/BCI-Orbital-Group15-v0.5.1.py",
+      "source_release": "BCI-Orbital-Group15-RateAware-v0.5.1",
+      "source_relative_path": "BCI-Orbital-Group15-v0.5.1.py",
+      "sha256": "53c87d9da08a22dbf927bb39890af648c2060f34ca81dc3dfc460abc0757a2ad",
+      "source_modified": false
+    },
+    {
+      "path": "components/rate-aware/BCI-Orbital-Group15-v0.5.1.py.sha256",
+      "source_release": "BCI-Orbital-Group15-RateAware-v0.5.1",
+      "source_relative_path": "BCI-Orbital-Group15-v0.5.1.py.sha256",
+      "sha256": "7bd6419c7c35a9cd748c32c948f745c96c6bc7294e782b19eab783601f70dc7e",
+      "source_modified": false
+    },
+    {
+      "path": "components/rate-aware/README.md",
+      "source_release": "BCI-Orbital-Group15-RateAware-v0.5.1",
+      "source_relative_path": "README.md",
+      "sha256": "a393dffef1169961016d4849aee78737d4cbe22c0bdef93b17a905b71135f73a",
+      "source_modified": false
+    },
+    {
+      "path": "components/console/assets/orbital-approved-mockup.png",
+      "source_release": "BCI-Orbital-PyQt6-v0.8.3",
+      "source_relative_path": "assets/orbital-approved-mockup.png",
+      "sha256": "f2b5f9659c7311e40e24ea2d6e04c01d6de53ec03285359a28386bd5e99bdd28",
+      "source_modified": false
+    }
+  ],
+  "omitted": [
+    "Python caches",
+    "release ZIP archives",
+    "historical patch diff",
+    "runtime evidence and model checkpoints"
+  ],
+  "manifests": "Component SHA256SUMS regenerated for imported inventory; imported source bytes unchanged."
+}

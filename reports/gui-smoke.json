@@ -1,0 +1,20 @@
+{
+  "header": "BEACON COMPUTING INITIATIVE",
+  "developer_seal": "CJB-DEV-2026",
+  "timestamp_utc": "2026-11-14T01:22:21.380027+00:00",
+  "command": [
+    "/usr/bin/python3",
+    "-B",
+    "components/console/scripts/gui_smoke.py"
+  ],
+  "environment_overrides": {
+    "QT_QPA_PLATFORM": "offscreen",
+    "QT_QPA_PLATFORMTHEME": "",
+    "QT_STYLE_OVERRIDE": "Fusion",
+    "DISPLAY": "unset"
+  },
+  "exit_code": 0,
+  "stdout": "BEACON COMPUTING INITIATIVE\nDeveloper Seal: CJB-DEV-2026\nPASS: 11 pages rendered; all visible buttons mapped; original globe asset loaded\n",
+  "stderr": "",
+  "scope": "Synthetic UI data; live refresh disabled."
+}

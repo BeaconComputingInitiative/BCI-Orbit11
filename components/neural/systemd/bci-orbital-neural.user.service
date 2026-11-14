@@ -1,0 +1,18 @@
+# BEACON COMPUTING INITIATIVE | Orbital Neural Core
+# Developer Seal: CJB-DEV-2026
+# File SHA-256: SHA256SUMS
+[Unit]
+Description=BCI Orbital neural sidecar read-only feature capture
+After=default.target
+
+[Service]
+Type=oneshot
+ExecStart=%h/.local/bin/bci-orbital-neural capture
+UMask=0077
+NoNewPrivileges=yes
+PrivateTmp=yes
+ProtectControlGroups=yes
+ProtectKernelModules=yes
+ProtectKernelTunables=yes
+RestrictSUIDSGID=yes
+TimeoutStartSec=45s

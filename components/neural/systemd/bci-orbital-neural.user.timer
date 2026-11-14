@@ -1,0 +1,14 @@
+# BEACON COMPUTING INITIATIVE | Orbital Neural Core
+# Developer Seal: CJB-DEV-2026
+# File SHA-256: SHA256SUMS
+[Unit]
+Description=BCI Orbital neural feature candidate scan every five minutes
+
+[Timer]
+OnBootSec=3min
+OnUnitInactiveSec=5min
+Persistent=true
+Unit=bci-orbital-neural.service
+
+[Install]
+WantedBy=timers.target

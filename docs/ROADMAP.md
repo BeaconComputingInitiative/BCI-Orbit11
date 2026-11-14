@@ -1,32 +1,66 @@
-<!-- BEACON COMPUTING INITIATIVE | Developer Seal: CJB-DEV-2026 -->
-# Development Roadmap and Exit Gates
+# BCI-Orbit11 roadmap
 
-**BEACON COMPUTING INITIATIVE** | **Developer Seal: CJB-DEV-2026**  
-**ORBIT11 / BCI Orbital Cyber Defense AI** | **Status: Design specification**
+BEACON COMPUTING INITIATIVE · Developer Seal: CJB-DEV-2026
 
-This roadmap states **intent**, not completed work. Milestone status is deliberately conservative.
+These are planned milestones, not claims that the functionality already exists.
 
-| Stage | Deliverables | Exit gate | Status |
-|:--|:--|:--|:--|
-| M0: Charter | README, specs, security boundaries, contribution rules | Reviewed design; no operational claims | Documentation authored |
-| M1: Evidence core | Event schemas, local store, hash-chain verification, synthetic fixtures | Crash/tamper/replay tests pass | Not started |
-| M2: Sensors | Process/socket/storage metadata, telemetry health | Least-privilege and negative tests | Not started |
-| M3: Baselines | Context profiles, history/live import, approval ledger | Authorized versioned promotion; drift tests | Not started |
-| M4: Detection | Rules, correlation, explainable incidents | Benign/malicious fixture and FP budget | Not started |
-| M5: Local adaptive AI | Candidate training, evaluation, registry and rollback | Reproducible positive/negative performance | Not started |
-| M6: Retention | Qualified post-training purge and legal holds | Deletion denial and recovery tests | Not started |
-| M7: Operator surface | Authenticated CLI/API, GUI, notifications | Usability, identity and access tests | Not started |
-| M8: Dry-run response | Policy reasoning, action simulation, audited review | No mutation in dry-run verified | Not started |
-| M9: Guarded containment | Bounded executor, recovery, approval workflow | Independent rollback and fail-safe drills | Not started |
-| M10: Deployment | systemd packaging, migration, health, observability | Full environment acceptance and sign-off | Not started |
+## 1. Reproducible integration foundation
 
-## Delivery slices
+- Keep imported sources traceable and independently testable.
+- Establish a unified package/launcher without breaking existing installation paths.
+- Add repeatable environment setup and fixture-based cross-component contracts.
+- Test current Python versions and PyQt6 rendering on intended Kali installations.
 
-- **First slice:** synthetic event ingestion and integrity verifier; no privileges and no network activity.
-- **Second slice:** read-only process/socket metadata under minimum privileges, health and gap handling.
-- **Third slice:** reviewed profiles and audited incident correlation.
-- **Subsequent slices:** local learning, retention, operator UI and containment in that order.
+Acceptance: fresh checkout can run all tests and documented safe CLI entry points;
+installed-stack acceptance records exact versions, access and missing components.
 
-## Definition of done
+## 2. Data quality and sensor contracts
 
-A milestone completes if and only if its actual code and docs are committed, its acceptance suite passes on the exact commit, artifacts are hashed, security risks are reviewed, and an operator signs off on the stated scope. Labels such as "AI-powered", "active protection" and "self-learning" are not permitted until corresponding functionality is demonstrated.
+- Version feature semantics separately from the display release.
+- Replace placeholder rates with explicit availability/missingness where needed.
+- Validate rate intervals, resets, interface changes, host/route drift and clock jumps.
+- Add stable process identity at sensor origin and authenticated source provenance.
+
+Acceptance: old and new datasets cannot be mixed silently; gaps and context changes
+produce explicit review states with fixture-backed compatibility tests.
+
+## 3. Model evaluation and registry
+
+- Curate reviewed benign and relevant adversarial evaluation datasets with provenance.
+- Measure alert volume, false positive behavior, missed deviations and drift.
+- Introduce independent holdout runs and documented threshold selection.
+- Build authenticated, versioned, create-only model registration, promotion and rollback.
+- Keep legacy data, synthetic demos and live approved candidates distinguishable.
+
+Acceptance: model card links reproducible independent evaluation; promotion and
+rollback are implemented and recovery-tested before either is operationally offered.
+
+## 4. Evidence durability and retention
+
+- Review journal crash consistency and chain anchoring.
+- Define bounded rotation, archival receipts, storage reserve and explicit recovery.
+- Anchor manifests externally or use independently controlled signing credentials.
+- Test interrupted writes, full disks, damaged sidecars and restoration from backups.
+
+Acceptance: recovery preserves original evidence, surfaces acquisition gaps and
+never turns a corrupted/unavailable source into a normal observation.
+
+## 5. Operator experience
+
+- Add end-to-end mocked workflows and worker cancellation/shutdown acceptance.
+- Make every unavailable sensor, context mismatch and quota condition actionable.
+- Clearly separate eligibility, approval, training, evaluation and deployment states.
+- Add safe export preview/redaction and discoverable evidence provenance.
+
+Acceptance: displayed facts can be traced to successful reads or verified artifacts;
+no decorative chart values or unsupported model predictions appear.
+
+## 6. Optional privileged operations
+
+- Design root-owned immutable deployments and minimum necessary capabilities.
+- Benchmark packet drops, kernel probe coverage and resource overhead.
+- Independently review legacy firewall response paths and scoped rollback.
+- Require explicit authorization, tested recovery and auditable operator identity.
+
+Acceptance: only separately approved, demonstrated-safe workflows are enabled.
+Autonomous containment is not a prerequisite for delivering useful analysis.

@@ -1,32 +1,50 @@
-<!-- BEACON COMPUTING INITIATIVE | Developer Seal: CJB-DEV-2026 -->
-# Contributing to ORBIT11
+# Contributing to BCI-Orbit11
 
-**BEACON COMPUTING INITIATIVE** | **Developer Seal: CJB-DEV-2026**  
-**ORBIT11 / BCI Orbital Cyber Defense AI** | **Status: Contributor guide**
+BEACON COMPUTING INITIATIVE · Developer Seal: CJB-DEV-2026
 
-ORBIT11 is currently a **private documentation-first** project. Contributions should improve a bounded engineering outcome, not imply that undeveloped capabilities already work.
+## Development workflow
 
-## Before a change
+1. Identify the component and read its README and trust boundaries.
+2. Keep runtime state outside the checkout. Use synthetic fixtures and temporary
+   directories for tests.
+3. Make the smallest reviewable source change; preserve unrelated installed projects.
+4. Run `python3 -B scripts/check.py`. If GUI behavior changes, run the offscreen
+   smoke check with PyQt6 and perform appropriate interactive acceptance.
+5. Refresh affected component manifests and the root source manifest. Hashes are
+   evidence of the final bytes, not permission to change operational policy.
+6. Explain behavior, test evidence, remaining limits and any required migration.
 
-Read [Architecture](docs/ARCHITECTURE.md), [Requirements](docs/REQUIREMENTS.md), [Threat model](docs/THREAT_MODEL.md), and [Governance](GOVERNANCE.md). For security-sensitive changes, include failure modes, permissions, evidence classification, approval rules and rollback.
+Preserved imported bytes are recorded in `docs/SOURCE-PROVENANCE.json`. When changing
+an imported file, update its provenance description to distinguish the original
+import digest from the new version. Do not silently claim modified source is still
+byte-identical to its release.
 
-## Pull request expectations
+## Review requirements
 
-- Reference an issue or describe the design/bug in reproducible terms.
-- State what changed, why, how it was tested and what remains unimplemented.
-- Include deterministic tests for code changes and negative/safety tests for elevated privileges, retention or containment.
-- Update documentation, relevant ADR and CHANGELOG when behavior or policy changes.
-- Preserve developer seal and regenerate SHA-256 manifest intentionally.
-- Use only synthetic or explicitly approved sanitized fixtures.
+Keep the BCI identity and `CJB-DEV-2026` seal in new project source and reports.
+Define explicit success/failure and authorization gates. Never replace failed sensor
+reads with normal-looking zero/empty baselines. Do not label heuristic novelty as
+confirmed malicious activity. Keep host baseline approval, candidate training,
+model promotion and response authorization distinct.
 
-## Commit guidance
+Schema, feature semantics, context mapping and integrity pins are compatibility
+contracts. Changes need migration notes and negative tests. Authentication,
+privileged deployment, service activation and retention policy need concrete
+reviewed behavior before operational use.
 
-Prefer small, self-contained changes. Recommended subjects: `docs:`, `feat:`, `fix:`, `test:`, `security:`, `build:`. Never commit passwords, API keys, real PCAPs, private messages, personal case records, model training dumps or unreviewed machine inventories.
+## Tests and dependencies
 
-## Review and merging
+The standard test runner spawns each component suite in a separate process with
+its own source path, preventing cross-component import collisions. Python/Bash
+static checks run before suites. Core tests use the standard library; the optional
+GUI smoke check requires PyQt6. Unit tests must not start live collectors, contact
+external inference APIs, train on local evidence or activate services.
 
-Safety-critical changes require explicit review by the accountable maintainer, plus independently reproducible tests. A PR is merge-ready if and only if it satisfies its declared scope, the corresponding safety gates are demonstrated, required documentation is updated, and it does not alter active systems implicitly.
+No package download, dependency upgrade, new license grant, runtime model import
+or persistent installation is part of routine test execution.
 
-## Development readiness
+## Pull request content
 
-No runtime build commands exist yet. Do not fabricate install instructions or claim a documentation change qualifies production code.
+Describe the concrete trigger and resulting behavior, relevant validation and
+material limits. Use synthetic reproductions. Include recovery steps for changes
+that affect stored schemas, operational service wiring or model compatibility.

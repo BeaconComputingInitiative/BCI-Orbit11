@@ -1,46 +1,86 @@
-<!-- BEACON COMPUTING INITIATIVE | Developer Seal: CJB-DEV-2026 -->
-# Operations and Incident Runbook
+# Operations and evidence
 
-**BEACON COMPUTING INITIATIVE** | **Developer Seal: CJB-DEV-2026**  
-**ORBIT11 / BCI Orbital Cyber Defense AI** | **Status: Pre-deployment runbook**
+BEACON COMPUTING INITIATIVE · Developer Seal: CJB-DEV-2026
 
-## Status definitions
+## Read-only triage
 
-- **NOT_IMPLEMENTED:** design exists but binary/service does not.
-- **HOLD:** required evidence, approvals or controls are missing; no promotion/containment.
-- **OBSERVE_ONLY:** implemented sensor collects within approved scope, but makes no disruptive changes.
-- **DRY_RUN:** records what a response policy *would* do without executing it.
-- **ARMED:** published policy permits strictly gated automated actions.
-- **DEGRADED:** one or more required collectors, clocks, stores or identity checks are unhealthy.
-- **PASS:** a declared set of tests and acceptance criteria is satisfied for a specific version. It is not a blanket assertion that the host is secure.
+1. Read component status and identify every unavailable or denied sensor.
+2. Read packet collector state and bounded diagnostic logs. QUOTA HOLD requires
+   both the defined service condition and an explicit matching journal message.
+3. Verify evidence consistency before relying on a journal, frozen candidate,
+   model or score report. Preserve originals and record retained chain heads.
+4. Compare context, timestamps and measurement provenance before correlating data.
+5. Report observations and alternate explanations. Escalate a hypothesis only
+   when independent evidence supports the stated conclusion.
 
-Currently **NOT_IMPLEMENTED / HOLD** applies to this repository's runtime.
+An inactive service, quota failure, unusual port, listener change or statistical
+outlier does not prove an attack. A failed collector also does not prove safety.
 
-## Operator checklist (future runtime)
+## Candidate-to-model lifecycle
 
-Before starting: confirm authorized host and approved sensor scope; verify version, binary and config provenance; check disk/time synchronization; validate keys and least privilege; confirm network context; check forensic hold requirements; and snapshot rollback material.
+| Stage | Required condition | Result |
+|---|---|---|
+| Capture | Authorized sources and validated measurement provenance | Unreviewed local journal |
+| Freeze | Valid chain and chosen context | New hashed candidate snapshot |
+| Review | Schema, digest, coverage, chronology, span and provenance | Eligibility assessment |
+| Approve training | Operator review plus dataset/context binding | Training-only approval artifact |
+| Train | Matching approval and revalidated input | New unpromoted model |
+| Evaluate | Verified same-context independent evaluation data | Shadow scores and contributor report |
+| Promote/rollback | Future authenticated registry and tested recovery | Currently HOLD in console |
 
-During monitoring: inspect collector heartbeat, ingestion lag, dropped-event counters, store integrity, alert rates, model/profile version, current response posture and incidents awaiting review. Do not promote a baseline solely to silence alerts.
+Do not concatenate legacy and live datasets to satisfy minimum window counts.
+Do not treat measured and zero-filled throughput windows as semantically identical.
+Do not use a high training-window count as a substitute for a valid chain or benign
+label review. The original core and console have different readiness layers;
+inspect the actual reports rather than assuming one checklist covers both.
 
-## Incident handling
+## Execution gates
 
-1. Confirm the observation's source, timestamp, context and sensor integrity.
-2. Record the original evidence reference, not only a screenshot or AI summary.
-3. Gather independent corroboration where available and list alternative benign explanations.
-4. Classify severity and confidence independently; raise HOLD when data is insufficient.
-5. Protect relevant originals from training cleanup and retention expiry.
-6. Apply response only under an approved policy and recoverable execution path.
-7. Validate outcome and rollback; preserve operator notes separately from raw data.
-8. Close with false-positive labeling, test cases, audit review and any approved baseline change.
+- Inspect host state IF AND ONLY IF the command is authorized and its dependencies
+  are available; record missing visibility explicitly.
+- Issue a model-derived finding IF AND ONLY IF the artifact and input satisfy the
+  schema, integrity and exact-context checks. Label it statistical novelty.
+- Record an event-sequence hypothesis IF AND ONLY IF the correlator's temporal,
+  host/context, stable-process and independent-source criteria are satisfied.
+- Train on host data IF AND ONLY IF qualification, review and explicit training
+  authorization all pass. A source-code upload is not training authorization.
+- Activate a service or privileged sensor IF AND ONLY IF that operation is separately
+  approved and its deployment/rollback requirements are reviewed.
+- Apply a live response IF AND ONLY IF separately approved, supported, scoped and
+  recovery-tested. Neural scores alone never supply that approval.
+- Remove temporary data IF AND ONLY IF it is classified disposable and required
+  evidence has been preserved. The repository's test fixtures live in temporary
+  directories; runtime forensic stores do not belong to that class.
 
-## System failure
+## Runtime locations retained for compatibility
 
-**Ledger corruption:** freeze mutating responses, preserve the affected files, compare protected anchors, enter HOLD. **Unknown network:** observe-only until profile review. **Lost clock:** preserve monotonic ordering where possible and clearly mark uncertainty. **Disk nearly full:** stop nonessential collection before risking evidence integrity; do not silently purge evidence. **Model failure:** fall back to deterministic rules and last approved version; no automatic promotion. **Policy identity failure:** containment denied.
+| Component | Existing state path |
+|---|---|
+| Host | `~/.local/state/bci-orbital-v2` |
+| Original neural | `~/.local/state/bci-orbital-neural-v0.2.0` |
+| Rate-aware integration | `~/.local/state/bci-orbital-integration-v0.5.1` |
+| Imported historical AI artifacts | `~/.local/state/bci-orbital-ai-v0.8.0` |
+| Console reports/models | `~/.local/state/bci-orbital-gui` |
 
-## Deployment constraints
+The existing application expects versioned launchers under `~/.local/bin` and
+release sources under `~/.local/opt`. Some preserved scripts explicitly assume the
+`bci` account at `/home/bci`; they are not general multiuser installers.
 
-No `systemctl`, `pip install`, firewall or database migration commands are specified here because ORBIT11 has no shipped runtime. Once added, installation documentation must include exact paths, sandboxing, privileges, reversible commands and checks for interaction with any existing BCI Orbital service.
+## Quota and retention
 
-## Recovery expectations
+A storage limit is an acquisition gap. Preserve existing evidence and establish a
+reviewed archival/retention strategy before restarting a quota-stopped collector.
+The console quota guard only prevents a known exit-code-3 restart loop; it does
+not create storage capacity or resume acquisition. No automatic purge is added.
+The dynamic packet service referenced by the console is an external installed
+component, not a bundled, newly validated system service.
 
-Maintain a separate, read-only recovery plan; verify restores using copies; record event gaps; and make restart decisions contingent on operator review. A restored baseline is usable if and only if its signature/digest and approval lineage verify.
+## Evidence assurance
+
+Keep hashes/chain heads in an independent trusted location when stronger provenance
+is needed. Local SHA-256 cannot authenticate the original sensor or prevent a
+privileged adversary from replacing both data and digests. Report receipt timestamps,
+acquisition context, access failures and transformations. Preserve original rows;
+work on verified copies. HMAC redaction protects identifier disclosure but not all
+linkability or inference risk. Do not upload packet captures, raw event databases,
+private model files or operator approval artifacts to this repository.

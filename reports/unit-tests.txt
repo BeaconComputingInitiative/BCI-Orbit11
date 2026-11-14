@@ -1,0 +1,158 @@
+BEACON COMPUTING INITIATIVE | Developer Seal: CJB-DEV-2026
+BCI-Orbit11: testing host
+test_approved_baseline_does_not_learn_deviation (test_orbital.OrbitalTests.test_approved_baseline_does_not_learn_deviation) ... ok
+test_chain_detects_tamper (test_orbital.OrbitalTests.test_chain_detects_tamper) ... ok
+test_empty_chain (test_orbital.OrbitalTests.test_empty_chain) ... ok
+test_export_sha_calculation (test_orbital.OrbitalTests.test_export_sha_calculation) ... ok
+test_initial_scan_uses_reference_not_live_quarantine (test_orbital.OrbitalTests.test_initial_scan_uses_reference_not_live_quarantine) ... /usr/lib/python3.14/subprocess.py:1139: ResourceWarning: subprocess 18 is still running
+  _warn("subprocess %s is still running" % self.pid,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_operator_ioc_and_suspicious_proc_still_dry_run (test_orbital.OrbitalTests.test_operator_ioc_and_suspicious_proc_still_dry_run) ... /usr/lib/python3.14/subprocess.py:1139: ResourceWarning: subprocess 21 is still running
+  _warn("subprocess %s is still running" % self.pid,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/usr/lib/python3.14/subprocess.py:1139: ResourceWarning: subprocess 22 is still running
+  _warn("subprocess %s is still running" % self.pid,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_protected_targets (test_orbital.OrbitalTests.test_protected_targets) ... ok
+test_reference_not_false_host_pretrained (test_orbital.OrbitalTests.test_reference_not_false_host_pretrained) ... ok
+test_socket_endpoints (test_orbital.OrbitalTests.test_socket_endpoints) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.021s
+
+OK
+BCI-Orbit11: testing neural
+test_cli_training_rejects_mismatched_approval (test_neural.NeuralTests.test_cli_training_rejects_mismatched_approval) ... ok
+test_cli_training_requires_approval (test_neural.NeuralTests.test_cli_training_requires_approval) ... ok
+test_context_mismatch_denied (test_neural.NeuralTests.test_context_mismatch_denied) ... ok
+test_correlates_same_process_two_sensors (test_neural.NeuralTests.test_correlates_same_process_two_sensors) ... ok
+test_early_stats_hold (test_neural.NeuralTests.test_early_stats_hold) ... ok
+test_hashed_file_and_tamper (test_neural.NeuralTests.test_hashed_file_and_tamper) ... ok
+test_invalid_model_weights (test_neural.NeuralTests.test_invalid_model_weights) ... ok
+test_journal_chain_freeze (test_neural.NeuralTests.test_journal_chain_freeze) ... ok
+test_journal_tamper_detected (test_neural.NeuralTests.test_journal_tamper_detected) ... ok
+test_legacy_export_keeps_profiles_untrusted (test_neural.NeuralTests.test_legacy_export_keeps_profiles_untrusted) ... ok
+test_legacy_export_missing_schema_hold (test_neural.NeuralTests.test_legacy_export_missing_schema_hold) ... ok
+test_no_artifact_overwrite (test_neural.NeuralTests.test_no_artifact_overwrite) ... ok
+test_no_correlation_on_different_context (test_neural.NeuralTests.test_no_correlation_on_different_context) ... ok
+test_no_correlation_on_different_host (test_neural.NeuralTests.test_no_correlation_on_different_host) ... ok
+test_no_correlation_one_sensor (test_neural.NeuralTests.test_no_correlation_one_sensor) ... ok
+test_no_correlation_reversed_order (test_neural.NeuralTests.test_no_correlation_reversed_order) ... ok
+test_no_correlation_without_process_key (test_neural.NeuralTests.test_no_correlation_without_process_key) ... ok
+test_no_future_timestamp (test_neural.NeuralTests.test_no_future_timestamp) ... ok
+test_no_mixed_context_train (test_neural.NeuralTests.test_no_mixed_context_train) ... ok
+test_qualified_stats_gate (test_neural.NeuralTests.test_qualified_stats_gate) ... ok
+test_snapshot_no_raw_addresses (test_neural.NeuralTests.test_snapshot_no_raw_addresses) ... ok
+test_snapshot_unknown_context_hold (test_neural.NeuralTests.test_snapshot_unknown_context_hold) ... ok
+test_train_and_score (test_neural.NeuralTests.test_train_and_score) ... ok
+test_usb_cooccurrence_is_weak (test_neural.NeuralTests.test_usb_cooccurrence_is_weak) ... ok
+test_window_nan_rejected (test_neural.NeuralTests.test_window_nan_rejected) ... ok
+test_window_unknown_feature_rejected (test_neural.NeuralTests.test_window_unknown_feature_rejected) ... ok
+test_window_validates (test_neural.NeuralTests.test_window_validates) ... ok
+
+----------------------------------------------------------------------
+Ran 27 tests in 0.127s
+
+OK
+BCI-Orbit11: testing expansion
+test_bridge_refuses_mismatched_network_interface (test_expansion.ExpansionTests.test_bridge_refuses_mismatched_network_interface) ... ok
+test_capture_requires_explicit_interface_and_bounds (test_expansion.ExpansionTests.test_capture_requires_explicit_interface_and_bounds) ... ok
+test_context_is_distinct (test_expansion.ExpansionTests.test_context_is_distinct) ... ok
+test_dns_ipv4 (test_expansion.ExpansionTests.test_dns_ipv4) ... ok
+test_dns_ipv6 (test_expansion.ExpansionTests.test_dns_ipv6) ... ok
+test_dns_reject_malformed_and_pointer_loop (test_expansion.ExpansionTests.test_dns_reject_malformed_and_pointer_loop) ... ok
+test_dns_vlan (test_expansion.ExpansionTests.test_dns_vlan) ... ok
+test_hash_create_no_overwrite (test_expansion.ExpansionTests.test_hash_create_no_overwrite) ... ok
+test_hmac_metadata_privacy (test_expansion.ExpansionTests.test_hmac_metadata_privacy) ... ok
+test_kernel_attempt_no_claim_of_read (test_expansion.ExpansionTests.test_kernel_attempt_no_claim_of_read) ... ok
+test_legacy_context_read_only (test_expansion.ExpansionTests.test_legacy_context_read_only) ... ok
+test_no_privilege_flag_no_capture (test_expansion.ExpansionTests.test_no_privilege_flag_no_capture) ... <frozen os>:709: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f31095bbe20>
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+<frozen os>:709: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f31095bbd30>
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+usage: python3 -m unittest packet-capture [-h] --interface INTERFACE
+                                          [--seconds SECONDS]
+                                          [--max-packets MAX_PACKETS]
+                                          [--include-metadata]
+                                          --acknowledge-privileged-capture
+                                          --output OUTPUT
+python3 -m unittest packet-capture: error: the following arguments are required: --acknowledge-privileged-capture
+ok
+test_noninitial_fragment_rejected (test_expansion.ExpansionTests.test_noninitial_fragment_rejected) ... ok
+test_parse_netdev (test_expansion.ExpansionTests.test_parse_netdev) ... ok
+test_rate_and_reset (test_expansion.ExpansionTests.test_rate_and_reset) ... ok
+test_shadow_context_gate (test_expansion.ExpansionTests.test_shadow_context_gate) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.009s
+
+OK
+BCI-Orbit11: testing console
+test_actions_defined (test_actions.BackendTests.test_actions_defined) ... ok
+test_bin_sidecar_atomic_report (test_actions.BackendTests.test_bin_sidecar_atomic_report) ... ok
+test_candidate_does_not_touch_journal (test_actions.BackendTests.test_candidate_does_not_touch_journal) ... ok
+test_candidate_refuses_early_data (test_actions.BackendTests.test_candidate_refuses_early_data) ... ok
+test_install_does_not_touch_services (test_actions.BackendTests.test_install_does_not_touch_services) ... ok
+test_logs_no_shell (test_actions.BackendTests.test_logs_no_shell) ... ok
+test_neural_cmd_missing (test_actions.BackendTests.test_neural_cmd_missing) ... ok
+test_original_globe_crop_exact (test_actions.BackendTests.test_original_globe_crop_exact) ... ok
+test_readiness_fail_closed (test_actions.BackendTests.test_readiness_fail_closed) ... ok
+test_source_uses_persistent_thread (test_actions.BackendTests.test_source_uses_persistent_thread) ... ok
+test_baseline_missing_data_not_invented (test_ai.NativeAiTests.test_baseline_missing_data_not_invented) ... ok
+test_baseline_never_promotes_or_executes (test_ai.NativeAiTests.test_baseline_never_promotes_or_executes) ... ok
+test_baseline_report_machine_readable (test_ai.NativeAiTests.test_baseline_report_machine_readable) ... ok
+test_baselines_intent_returns_real_layers (test_ai.NativeAiTests.test_baselines_intent_returns_real_layers) ... ok
+test_context_cannot_be_assumed_equal (test_ai.NativeAiTests.test_context_cannot_be_assumed_equal) ... ok
+test_health_facts_are_not_model_inference (test_ai.NativeAiTests.test_health_facts_are_not_model_inference) ... ok
+test_matched_model_can_explain_original_scores (test_ai.NativeAiTests.test_matched_model_can_explain_original_scores) ... ok
+test_no_attribution_from_anomaly (test_ai.NativeAiTests.test_no_attribution_from_anomaly) ... ok
+test_no_model_never_invents_anomalies (test_ai.NativeAiTests.test_no_model_never_invents_anomalies) ... ok
+test_pinned_model_context_gate (test_ai.NativeAiTests.test_pinned_model_context_gate) ... ok
+test_scoring_invokes_same_native_core (test_ai.NativeAiTests.test_scoring_invokes_same_native_core) ... ok
+test_scoring_requires_hashed_input (test_ai.NativeAiTests.test_scoring_requires_hashed_input) ... ok
+test_training_not_silently_approved (test_ai.NativeAiTests.test_training_not_silently_approved) ... ok
+test_unsupported_instruction_cannot_execute (test_ai.NativeAiTests.test_unsupported_instruction_cannot_execute) ... ok
+test_absent_journal (test_backend.Tests.test_absent_journal) ... ok
+test_bad_journal (test_backend.Tests.test_bad_journal) ... ok
+test_chain_good (test_backend.Tests.test_chain_good) ... ok
+test_constants (test_backend.Tests.test_constants) ... ok
+test_gui_has_globe_preserved (test_backend.Tests.test_gui_has_globe_preserved) ... ok
+test_interface_invalid (test_backend.Tests.test_interface_invalid) ... ok
+test_no_shell_in_run (test_backend.Tests.test_no_shell_in_run) ... ok
+test_report_has_hash (test_backend.Tests.test_report_has_hash) ... ok
+test_skin_exact_dimensions (test_backend.Tests.test_skin_exact_dimensions) ... ok
+test_unsafe_symlink (test_backend.Tests.test_unsafe_symlink) ... ok
+test_active_collector_never_labelled_quota (test_remediation.RemediationTests.test_active_collector_never_labelled_quota) ... ok
+test_ai_quota_intent_grounded (test_remediation.RemediationTests.test_ai_quota_intent_grounded) ... ok
+test_baseline_cannot_claim_live_model (test_remediation.RemediationTests.test_baseline_cannot_claim_live_model) ... ok
+test_earliest_and_latest_samples_not_now_minus_oldest (test_remediation.RemediationTests.test_earliest_and_latest_samples_not_now_minus_oldest) ... ok
+test_failed_counter_read_is_unavailable_not_zero (test_remediation.RemediationTests.test_failed_counter_read_is_unavailable_not_zero) ... ok
+test_guard_script_does_not_modify_evidence (test_remediation.RemediationTests.test_guard_script_does_not_modify_evidence) ... ok
+test_gui_version_and_missing_sample_guard_in_source (test_remediation.RemediationTests.test_gui_version_and_missing_sample_guard_in_source) ... ok
+test_packet_failure_without_journal_is_not_quota (test_remediation.RemediationTests.test_packet_failure_without_journal_is_not_quota) ... ok
+test_quota_requires_logged_evidence (test_remediation.RemediationTests.test_quota_requires_logged_evidence) ... ok
+test_readiness_gate_requires_no_historical_gaps (test_remediation.RemediationTests.test_readiness_gate_requires_no_historical_gaps) ... ok
+test_same_context_provenance_drift_fails_closed (test_remediation.RemediationTests.test_same_context_provenance_drift_fails_closed) ... ok
+test_systemd_details_parse (test_remediation.RemediationTests.test_systemd_details_parse) ... ok
+
+----------------------------------------------------------------------
+Ran 46 tests in 0.038s
+
+OK
+test_manifest (__main__.SelfTests.test_manifest) ... ok
+test_manifest_rejects_traversal (__main__.SelfTests.test_manifest_rejects_traversal) ... ok
+test_no_overwrite (__main__.SelfTests.test_no_overwrite) ... ok
+test_sidecar_round_trip (__main__.SelfTests.test_sidecar_round_trip) ... ok
+test_sidecar_tamper (__main__.SelfTests.test_sidecar_tamper) ... ok
+test_unit_keeps_no_privilege (__main__.SelfTests.test_unit_keeps_no_privilege) ... ok
+test_window_accept_valid_provenance (__main__.SelfTests.test_window_accept_valid_provenance) ... ok
+test_window_reject_context_mismatch (__main__.SelfTests.test_window_reject_context_mismatch) ... ok
+test_window_reject_missing_rate (__main__.SelfTests.test_window_reject_missing_rate) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.003s
+
+OK
+PASS: component tests, Python parsing, and shell syntax. No installation or activation.

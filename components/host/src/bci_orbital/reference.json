@@ -1,0 +1,17 @@
+{
+  "bci_header": "BEACON COMPUTING INITIATIVE | Orbital Cyber Defense",
+  "developer_seal": "CJB-DEV-2026",
+  "schema_version": 1,
+  "reference_version": "2026.11.13-seed.1",
+  "classification": "curated_generic_reference_not_host_trained",
+  "training_claim": "NO_HOST_TRAINING_PERFORMED",
+  "notes": "Conservative starting heuristics, not known-good local applications and not a malware intelligence feed. No automatic quarantine decisions from this reference alone.",
+  "suspicious_execution_prefixes": ["/tmp/", "/var/tmp/", "/dev/shm/", "/run/user/"],
+  "high_risk_listen_ports": [23, 4444, 5555, 31337],
+  "administrative_ports_review": [22, 3389, 5900, 9090],
+  "browser_process_names": ["firefox", "firefox-esr", "chromium", "chrome", "brave", "tor-browser"],
+  "protected_networks": ["127.0.0.0/8", "10.0.0.0/8", "172.16.0.0/12", "192.168.0.0/16", "169.254.0.0/16", "100.64.0.0/10", "224.0.0.0/4", "0.0.0.0/8", "::1/128", "fc00::/7", "fe80::/10", "ff00::/8"],
+  "baseline": {"min_learning_days": 7, "optional_extension_days": 14, "historical_import_target_days": 30, "min_unique_scan_hours": 24},
+  "response": {"default_mode": "dry-run", "require_two_independent_indicators": true, "quarantine_ttl_seconds": 300, "maximum_targets_per_hour": 3, "domain_or_browser_signal_alone_is_not_sufficient": true},
+  "monitoring": {"interval_seconds": 60, "email_enabled": false, "auto_learn_approved_profiles": false}
+}

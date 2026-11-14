@@ -1,0 +1,31 @@
+# BEACON COMPUTING INITIATIVE | Orbital Cyber Defense
+# Developer Seal: CJB-DEV-2026
+# SHA-256: see SHA256SUMS
+[Unit]
+Description=BCI Orbital v2 (separate host-scope monitor)
+After=network-online.target
+Wants=network-online.target
+ConditionPathExists=/opt/bci-orbital-v2/releases/0.1.0/src/bci_orbital/__main__.py
+
+[Service]
+Type=simple
+User=root
+Group=root
+Environment=PYTHONPATH=/opt/bci-orbital-v2/releases/0.1.0/src
+Environment=BCI_ORBITAL_HOME=/var/lib/bci-orbital-v2
+ExecStart=/usr/bin/python3 -m bci_orbital run
+WorkingDirectory=/opt/bci-orbital-v2/releases/0.1.0
+Restart=on-failure
+RestartSec=15
+UMask=0077
+NoNewPrivileges=yes
+ProtectSystem=strict
+ProtectHome=read-only
+ReadWritePaths=/var/lib/bci-orbital-v2
+PrivateTmp=yes
+RestrictRealtime=yes
+LockPersonality=yes
+CapabilityBoundingSet=CAP_NET_ADMIN CAP_DAC_READ_SEARCH CAP_SYS_PTRACE
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,22 @@
+# BEACON COMPUTING INITIATIVE | Orbital Cyber Defense
+# Developer Seal: CJB-DEV-2026
+# SHA-256: see SHA256SUMS
+[Unit]
+Description=BCI Orbital v2 (isolated user-space monitoring)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=%h/.local/bin/bci-orbital-v2 run
+Restart=on-failure
+RestartSec=10
+UMask=0077
+NoNewPrivileges=yes
+ProtectSystem=strict
+ProtectHome=read-only
+ReadWritePaths=%h/.local/state/bci-orbital-v2
+PrivateTmp=yes
+
+[Install]
+WantedBy=default.target
