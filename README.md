@@ -56,6 +56,63 @@
 4. Require explicit approval before any training, model promotion or production integration.
 5. Publish reproducible evaluation reports and an informational SHA-256 manifest for committed documentation.
 
+## Detailed engineering interpretation (November 15, 2026)
+
+### What Orbit11 is—and is not
+
+Orbit11 is an experimental, locally operated security-monitoring and research stack. The repository integrates host observations, a small anomaly autoencoder, evidence handling, measured-rate telemetry, and an operator console. The source import is not evidence that all subsystems are running together, that model training has succeeded on eligible research records, or that an automated defensive response is approved.
+
+The current learning architecture documented in the imported source is a 12-feature reconstruction autoencoder with topology `12 → 8 → 3 → 8 → 12`. Reconstruction error can flag unfamiliar observations; it does **not** prove intrusion, intent, identity, or attribution. A separate research qualification track evaluates constrained planning and staged hypotheses. Its frozen untrained-candidate diagnostic failures must not be conflated with the autoencoder's statistical reconstruction behavior.
+
+### Evidence and dataset lifecycle
+
+| Stage | Required evidence | Failure behavior |
+|---|---|---|
+| 1. Source intake | Dataset identifier, origin, collection authority, collection time, immutable source reference | Quarantine unknown or unauthorized sources |
+| 2. Schema and chronology | Feature schema, timestamps, event ordering, source context | HOLD on malformed or temporally inconsistent records |
+| 3. Supervision | Clear definition of expected/incorrect behavior, reviewer identity, labeling rationale | HOLD ambiguous or unsupported labels |
+| 4. Leakage prevention | Disjoint feature/target fields, train/validation/test isolation, duplicate and near-duplicate review | HOLD if target or evaluation answers enter input features |
+| 5. Coverage | Positive and negative controls across relevant host/network contexts and representative failure modes | HOLD if coverage is inadequate |
+| 6. Training approval | Eligible records, reproducible configuration, explicit operator authorization | No training when authorization is absent |
+| 7. Qualification | Frozen test set, historical regressions, calibration, failure analysis, evidence-backed metrics | No promotion on failed diagnostics |
+| 8. Operational promotion | Approved model identity, rollback plan, bounded permissions, operator acceptance | Research-only if any gate remains unresolved |
+
+**Negative examples** should include independently reviewed *incorrect* or suspicious patterns with benign counterexamples: unexpected service exposure, anomalous process/network correlations, unauthorized storage transfer indicators, stale baselines, mismatched network context, contradictory telemetry, and deliberately malformed evidence. These are proposed evaluation categories—not claims of detected attacks. Keep ground-truth labels separate from model-visible features and avoid representing synthetic fixtures as real incidents.
+
+### Trust boundaries and safeguards
+
+- **Observation is not conclusion:** raw telemetry, model scores, analyst findings, and enforcement decisions must remain separately identified.
+- **Context matters:** network and host profiles must not be silently pooled; baseline changes require review.
+- **Evidence integrity:** preserve provenance and relevant forensic/legal-hold material. A hash is an integrity comparison, not proof of origin or authenticity.
+- **Containment:** legacy opt-in host response code exists, but no containment is authorized by the present research qualification. Fail closed on missing approval.
+- **Privacy:** do not publish personal machine logs, raw captures, credentials, host identifiers, or private training material as part of documentation updates.
+- **Reproducibility:** record exact source revision, dataset manifest, environment, seed, evaluation definition and artifact hashes for each qualifying experiment.
+- **Retention:** cleanup of disposable training inputs may occur only after verified successful qualification and subject to evidence preservation and legal holds; no deletion is implied by this README.
+
+### Interpretation of current failures
+
+**Q1.7: possible target leakage.** The native input included a field named `target`. This is a structural warning, not proof of malicious manipulation. The feature builder must demonstrate that supervised labels and evaluation answers cannot leak into predictors.
+
+**Q1.8: structural-only review.** One report was ingested; the review did not grant runtime or production clearance. Its local JSON/HTML report paths are operator artifacts, not automatically public repository assets.
+
+**Unified frozen diagnostics:** 0/1 constrained planning and 0/3 staged hypotheses on an untrained candidate. These small synthetic controls expose missing capabilities under those fixtures; they do not establish a real-world attack-detection rate, false-positive rate or production efficacy.
+
+**Checkpoint identity:** two checkpoint files sharing the same reported SHA-256 establish byte identity if verified locally. They do not establish independent experiments, successful learning or generalization.
+
+### Acceptance criteria for the next milestone
+
+A research milestone is **PASS if and only if** all mandatory eligibility, provenance, separation, supervision, reproducibility and frozen evaluation gates pass and an authorized reviewer records approval. Otherwise it remains **HOLD/FAIL**, with the blocking reason retained in the report. A production milestone requires a *separate* explicit operational authorization and safety review; a research PASS never automatically enables production.
+
+The immediate priorities are: curate eligible reviewed examples; correct label/feature separation; build a reproducible qualification harness; re-run historical and frozen diagnostics; inspect failure cases; and only then consider a separately approved training run.
+
+### Public-release readiness
+
+This documentation may describe a public research project, but repository visibility is managed separately in GitHub Settings. Before making the repository public, review **all commits and branches**, GitHub Actions logs/artifacts, committed configuration, tokens, internal paths, machine evidence, personal data, licenses, and dependencies. Git history may expose previously removed material. No security audit or visibility change is asserted by this README update.
+
+### Reporting and verification convention
+
+The latest status appears first. Each reported result must identify whether it is **reported**, **reproduced**, or **independently verified**. Use informational SHA-256 manifests for distributed artifacts, and retain the developer seal `CJB-DEV-2026`. Git commit SHA and Git blob SHA are not SHA-256 file digests.
+
 ---
 
 ## Preserved repository documentation
