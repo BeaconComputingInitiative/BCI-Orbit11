@@ -3,6 +3,67 @@
 **BEACON COMPUTING INITIATIVE**  
 **Developer Seal:** `CJB-DEV-2026`  
 **Project:** BCI Orbital Cyber Defense AI  
+**Reporting order:** Most recent first  
+**Current qualification:** **HOLD — research-only; production disabled**  
+**README content integrity:** SHA-256 manifest should be generated from the exported README bytes; GitHub blob SHA is not a SHA-256 digest.
+
+## Latest qualification — November 15, 2026
+
+**Unified qualification: HOLD.** These are reported qualification outcomes from the project review, not independently re-executed tests on GitHub.
+
+| Area | Latest reported result | Interpretation |
+|---|---|---|
+| Original checkpoints and canonical v1.0.1 | PASS | Historical artifact checks passed; no production authorization |
+| Frozen evaluations and 24 historical regressions | PASS | Existing reference checks passed |
+| Software tests | 29 PASS | Reported test result, not a fresh CI run |
+| Generated SHA-256 manifests | PASS | Manifest generation reported; validate against local artifacts |
+| Research training eligibility | BLOCKED | Zero eligible records; zero runs started |
+| Label-compatible targets | HOLD | Approval, supervision, leakage and runtime clearance missing |
+| Frozen capability-constrained planning diagnostic | FAIL (0/1) | Untrained candidate; synthetic diagnostic |
+| Frozen staged hypothesis checks | FAIL (0/3) | Untrained candidate; synthetic diagnostic |
+| Production integration | BLOCKED | No deployment, containment or promotion authorized |
+
+**Referenced local reports:** `audits/orbit11-unified-qualification-v0.1.0/UNIFIED-RUN-REPORT.json` and its capability comparison. These paths are local report references, not assertions that the files are committed to this repository.
+
+### November 15 — Q1.8 offline review gate
+
+- Status: `HOLD_ONLY_STRUCTURAL_INSPECTION`.
+- Input reports: 1.
+- Production integration: **BLOCKED**.
+- Local report: `/home/bci/ORBIT11-Q18-reports/q18-20261115T024416Z-7effa0b2/qualification_report.json`.
+- Local review: `/home/bci/ORBIT11-Q18-reports/q18-20261115T024416Z-7effa0b2/review.html`.
+- Reported report SHA-256: `d99a3907548ecb896b39dc2bb1dd207f4626fee504a326a118b1534c08c3` (not independently verified here).
+
+### November 15 — Q1.7 leakage gate
+
+- Smoke test reported **HOLD** due to possible label leakage in native input: `['target']`.
+- Any `target` field used as a supervision label must be excluded from inference features unless an explicit, independently validated feature specification allows it.
+- Training remains blocked until label separation, provenance, leakage controls and review gates pass.
+
+### November 14 — checkpoint and dataset review
+
+- Two 100-epoch multicorpus checkpoint files were reported byte-identical, with SHA-256 `88116790044ce300fd3caaa6452f4f254770d021e1ab0b635ee9ffc3aa00f99f`.
+- Byte identity is **not** evidence of two independent training outcomes or model effectiveness.
+- Dataset directory structure was reported PASS, but structural validity alone does not establish eligible supervised records.
+- Offline research examples of incorrect or anomalous behavior are a proposed dataset direction; they must be explicitly labeled, evidence-grounded, provenance-tracked and leakage-tested before training.
+- No operational attack execution, unreviewed model promotion or production integration is authorized by these historical results.
+
+### Next qualification steps
+
+1. Inventory candidate research records and document provenance, permissions and label semantics.
+2. Add independently reviewed negative/incorrect examples alongside valid controls, without exposing labels in model input features.
+3. Re-run leakage checks, staged hypothesis tests and capability-constrained planning diagnostics.
+4. Require explicit approval before any training, model promotion or production integration.
+5. Publish reproducible evaluation reports and an informational SHA-256 manifest for committed documentation.
+
+---
+
+## Preserved repository documentation
+
+
+**BEACON COMPUTING INITIATIVE**  
+**Developer Seal:** `CJB-DEV-2026`  
+**Project:** BCI Orbital Cyber Defense AI  
 **Repository/model-family identity:** BCI-Orbit11  
 **Stage:** Experimental engineering integration; analyst review required
 
