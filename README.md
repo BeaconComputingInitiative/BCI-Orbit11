@@ -39,6 +39,7 @@ building blocks. They do not satisfy all requirements in the target specificatio
 | Review evidence and operational workflows | [Operations](docs/OPERATIONS.md) |
 | Review attack surface, privacy and gaps | [Security](SECURITY.md) |
 | See what was checked for this import | [Validation](docs/VALIDATION.md) |
+| See latest separate Q1.7/Q1.8 research gate | [Qualification HOLD record](docs/research/ORBIT11-Q1.8-QUALIFICATION-2026-11-15.md) |
 | Plan further development | [Roadmap](docs/ROADMAP.md) |
 | Trace each imported file | [Source provenance](docs/SOURCE-PROVENANCE.json) |
 
