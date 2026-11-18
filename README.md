@@ -7,7 +7,105 @@
 **Current qualification:** **HOLD — research-only; production disabled**  
 **README content integrity:** SHA-256 manifest should be generated from the exported README bytes; GitHub blob SHA is not a SHA-256 digest.
 
-## Latest qualification — November 15, 2026
+
+## Latest research update — November 17, 2026
+
+**Status:** **RESEARCH_ONLY · Operational qualification HOLD · PRODUCTION HOLD**  
+**Evidence boundary:** The results below are **reported outcomes from local Kali/ORBIT11 workspaces**, supplied by the project operator. They are not GitHub CI results, not independently reproduced by this repository update, and do not mean the newer v0.6–v1.4 research workspaces or private checkpoints have been committed here.
+
+### ORBIT11's four orbital divisions
+
+The approved astronomical names are canonical for design and documentation. Previous functional names remain aliases while code is migrated.
+
+| Division | Legacy functional alias | Responsibility | Operational boundary |
+|---|---|---|---|
+| **APOGEE** | Sentinel | Host/network observation, sensor visibility, detection and monitoring | Collect within existing authorization; no unsupported attribution |
+| **PARALLAX** | Investigator | Evidence normalization, lineage, timeline reconstruction, correlation, missing-information analysis | Preserve original evidence; abstain when context is insufficient |
+| **LAGRANGE** | Guardian | Defensive assessment, reversible response proposals and recovery verification | **Shadow-only**; no automatic containment authorization |
+| **PERIGEE** | Adversary Lab | Authorized attack-surface assessment, finding verification and adversarial-activity investigation | Explicit targets, scope, method and operator approval; no unrestricted exploitation |
+
+These names do **not** imply that the four agents, native model, or operational execution pathways have been integrated and qualified for deployment.
+
+### Latest measured research outcomes (newest first)
+
+#### November 17 — v1.4 neural-value qualification: engineering PASS; operational HOLD
+
+- A read-only synthetic comparison examined **72 evidence-qualified cases**, representing **six distinct model-facing tensor patterns**.
+- Deterministic-only, neural-only and evidence-gated hybrid decisions agreed on all 72; each reported **100% positive recall, negative recall and balanced accuracy** within this narrow synthetic subset.
+- **Neural improvements over the deterministic decision rule: 0.** The native checkpoint was advisory and did not change an outcome.
+- The v1.3 evidence gate prevented **12 false relationship assertions** that the original per-handoff rule would have made. Its explicit adjacent parent-child corroboration requirement explains the improvement; it is **not** a neural-learning gain.
+- All **36 positive cosine distances** were within **1.2 × 10⁻⁷** of a zero cutoff; negative distances ranged from **0.04566 to 0.32920**. Cosine distances are **not calibrated probabilities** and cannot override sufficiency rules.
+- Read-only local integration covered sealed audit metadata for **6,940 APOGEE host-event records** and **318 aggregate observation windows**, plus PARALLAX-compatible chain-integrity reports. **13 timestamp reversals** were recorded, with no chain mismatch and **zero approved native training targets**.
+- **LAGRANGE** remained shadow-only; **PERIGEE** was not invoked. No additional model calls, optimizer steps, deployment or containment occurred in the reported v1.4 work.
+- Local audit references (not necessarily present in GitHub): `workspaces/orbit11-neural-value-qualification-v1.4/reports/NEURAL-VALUE.json`, `NATIVE-DISTANCE-ANALYSIS.json`, `READ-ONLY-OBSERVATION-INTEGRATION.json` and `QUALIFICATION.json`. A reported eight-entry SHA-256 manifest and 141 protected-file checks passed locally.
+
+#### November 17 — v1.3 evidence-aware contrastive reasoning: synthetic PASS
+
+- Final frozen synthetic challenge: **36 positive, 36 hard-negative and 72 ambiguous** cases across **12 new lineages**.
+- The sufficiency gate assessed `SUFFICIENT`, `INSUFFICIENT` or `CONFLICTING` **before** neural inference and returned abstention reason codes plus required missing evidence.
+- Hybrid results: **100% positive recall, 100% negative recall, 100% balanced accuracy, 100% ambiguous-case abstention**, **zero false assertions** on 72 ambiguous cases, and **zero native calls** for those cases.
+- Original deterministic rule: **83.3% abstention**, with **12 unsupported match assertions**. Neural-only: **0% abstention**, **72 unsupported assertions**.
+- All 12 improvements came from deterministic adjacent-handoff lineage checking; neural advice changed **zero decisions**.
+- A defective first frozen fixture incorrectly allowed self-parent process links. That run was preserved; a development regression repaired the fixture generator and a **separately frozen lineage** was used for the final qualification.
+- Local audit: `workspaces/orbit11-contrastive-reasoning-v1.3/results/`. Reported manifest SHA-256: `d9de31b92b2dbd342088b5665e0d39ba181bebaf5b4657c747db55e2df892b01`.
+
+#### November 17 — v1.2 challenge: narrow binary accuracy but abstention FAIL
+
+- A frozen synthetic challenge comprised **360 cases**, six scenario families and 18 lineages. Full tensor fingerprints were unique, but preprocessing reduced them to **13 patterns**.
+- Nine new reduced patterns included negatives and ambiguous cases **but no new positives**. Positive/negative generalization to novel patterns therefore remained unqualified.
+- The repaired checkpoint classified evidence-sufficient positive/negative cases correctly in that challenge, but **abstained on 0% of ambiguous cases**; a deterministic evidence rule abstained on 100%.
+- This failure motivated the v1.3 non-overridable evidence-sufficiency gate. The earlier failed challenge remains part of project history; it was not retroactively relabeled PASS.
+
+#### November 17 — contrastive v1.1: native training and evaluation limitations
+
+- Separate synthetic research curriculum: **112 episodes, 448 pairs**, comprised of **112 positive, 224 negative and 112 unresolved/loss-masked** relationships; 448 response alternatives and 448 conditional resolution paths.
+- Family-isolated synthetic splits provided **48 positive / 96 negative** training pairs and **32 positive / 64 negative** pairs in each of validation and evaluation. All 112 unresolved pairs were masked. Synthetic lineage separation is not proof of independent real-world sources.
+- An initial **96-update** native contrastive experiment selected a checkpoint at validation step 56; frozen evaluation yielded **50% positive recall and 75% balanced accuracy**, failing predeclared thresholds. Historical failed results remain preserved.
+- A later repaired candidate achieved **100% on 288 newly frozen synthetic examples**, but those examples collapsed to just **four distinct model-facing patterns**, three already seen in development. The deterministic evidence rule matched that result. This was not evidence of broad generalization or incremental neural value.
+- Earlier v1.0 contrastive material contained **2,016 synthetic pairs**. Native compatibility was established, but conflicting tensor representations, generator-identity shortcuts and cross-partition overlap caused quarantine; do not use the original v1.0 counts as qualified training counts.
+- The v1.1 repair kept explicit execution/session corroboration, handoff receipts, reliable relative chronology, visibility masks, and label/answer isolation. Unresolved evidence is not a negative label.
+
+#### November 17 — native v0.6 and the first research-corpus pilot
+
+- A separate local native v0.6 four-objective candidate reportedly contains **183,209 full native parameters**; engineering/gradient and checkpoint recovery tests passed. This is **not** the historical 12-feature autoencoder imported into this repository.
+- Synthetic optimizer smoke tests demonstrated real parameter updates for four objectives on small fixed fixtures; these tests did **not** demonstrate cybersecurity generalization.
+- An operator-authorized, offline, **100-CPU-update train-only pilot** used a verified 50K source through its canonical event view. Its **796 linked candidates** remained one group and deduplicated to **98 effective cases**.
+- Reported train-only losses: temporal **0.70241 → 0.31284** (1,734 valid targets); relationship **0.70442 → 0.00328** (5,488 targets); reconstruction **0.43357 → 0.05362** (3,136 targets). **Contrastive had zero justified negative components and was not trained in that pilot.**
+- **133,087 parameter elements changed**, recovery matched exactly, and nine local checksums reportedly passed. The research-only checkpoint's reported SHA-256 is `6490e8d89883d3590311dea5b8ff675e2b89af2a906005c289c75b0a6be691b7`.
+- The user designated existing source data for research use. **Operator authorization is not equivalent to authenticated independent source review.** Training-set loss reductions do not establish predictive performance on unseen operational evidence.
+- The separate research checkpoint and source data are local artifacts and **are not uploaded by this README change**.
+
+### Current release and qualification gates
+
+| Gate | Current reported decision |
+|---|---|
+| Native v0.6 engineering and research optimization | PASS on controlled fixtures; local code/checkpoints not confirmed present in this repository |
+| Three native objectives trained on an operator-authorized local corpus pilot | Research completed, **train-only** |
+| Contrastive native optimization | Research completed; broad neural contribution **not demonstrated** |
+| Evidence-sufficiency and abstention | v1.3 synthetic PASS; enforce fail-closed behavior |
+| Independent operational labels / authenticated provenance | **HOLD** |
+| Independent, frozen, real-observation evaluation | **HOLD / not measured** |
+| Production neural promotion | **BLOCKED** |
+| LAGRANGE active response / containment | **DISABLED / shadow-only** |
+| PERIGEE active assessment execution | **NOT INVOKED / requires explicit scope approval** |
+| Deployment and operational acceptance | **PRODUCTION HOLD** |
+
+### Next milestone — v1.5 operational evidence qualification
+
+1. Reuse existing APOGEE/PARALLAX read-only source inventories rather than repeating mass scans. Inspect raw-event provenance and the **13 timestamp reversals** without silently rewriting timestamps.
+2. Distinguish event time, ingest time, clock synchronization, source visibility and aggregate metadata. Missing execution/session evidence must remain unknown, not invented.
+3. Document evidence-supported positive, negative and unresolved relationships, with non-overridable abstention for invalid ancestry, contradictory receipts or degraded visibility.
+4. Obtain authenticated source/label review and **independent frozen operational evidence**. Maintain isolation from local synthetic curricula and earlier development fixtures.
+5. Compare deterministic-only, neural advisory and hybrid decisions on qualified new evidence; require a **measurable incremental neural benefit** before any promotion claim.
+6. Keep the four orbital divisions isolated from live offensive execution, containment, and automatic production changes without separate explicit authorization.
+
+**Qualification is PASS if and only if** applicable provenance, integrity, source authorization, objective/feature compatibility, leakage isolation, independent review and frozen evaluation criteria all pass. Otherwise record the precise HOLD or FAIL state. **Research PASS does not imply production approval.**
+
+**Publication boundary:** This README update contains a status digest and references to locally reported paths and hashes only. It does not upload private telemetry, raw capture files, credentials, source datasets, research checkpoints, or local evidence. The source files already committed in this repository remain the previously imported experimental components; the latest local v0.6–v1.4 workspaces must be separately reviewed and committed if publication is later authorized.
+
+---
+
+## Historical qualification — November 15, 2026
 
 **Unified qualification: HOLD.** These are reported qualification outcomes from the project review, not independently re-executed tests on GitHub.
 
