@@ -197,6 +197,16 @@ Next authorized step:
 - **Verification state:** Source **COMMITTED**; no Kubuntu restore, target-disk comparison or model compatibility verification performed.
 - **Decision:** **RESTORE SOURCE COMMITTED / RESTORE ACCEPTANCE HOLD**.
 
+### Entry 005 — 2026-11-20 UTC — Kubuntu migration instructions committed
+
+**BEACON COMPUTING INITIATIVE** | **Developer Seal: CJB-DEV-2026**
+
+- **Artifact:** `docs/KUBUNTU-MIGRATION.md`; commit `89f30c30bc5f404ca377d02543f4f28456cab322`.
+- **Scope:** Four-stage workflow: old-host inventory and private backup, fresh Kubuntu source setup, integrity-checked private restore, and gated engineering acceptance.
+- **Known limitation:** The GitHub repository contains historical source components, not all of the newer native research workspaces or operator-local datasets. Public GitHub access cannot retrieve bytes stored only on the current computer.
+- **Observed evidence:** Documentation file successfully committed on the recovery branch; user disk contents and available backup space **NOT INSPECTED**.
+- **Decision:** **DOCUMENTATION COMMITTED / COMPLETE RESTORATION HOLD**.
+
 ## Repository development history
 
 | UTC date | Activity | Recorded state |
