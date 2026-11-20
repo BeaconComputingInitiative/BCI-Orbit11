@@ -63,8 +63,8 @@ sudo apt-get update
 sudo apt-get install -y git
 git clone https://github.com/BeaconComputingInitiative/BCI-Orbit11.git ~/BCI/Projects/ORBIT11
 cd ~/BCI/Projects/ORBIT11
-bash scripts/install-kubuntu.sh --audit
 bash scripts/install-kubuntu.sh --install
+bash scripts/install-kubuntu.sh --audit
 ```
 
 The install mode sets up Ubuntu Python 3 and PyQt6 through the package manager,
