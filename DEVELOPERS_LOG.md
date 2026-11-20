@@ -164,6 +164,17 @@ Next authorized step:
 - **Decision:** **INVENTORY PASS / LOCAL ARTIFACT PRESERVATION HOLD / PRODUCTION HOLD**.
 - **Next:** Add account-portable Kubuntu installer, export/restore procedure, and reproducible verification workflow; update the log after each completed action.
 
+### Entry 002 — 2026-11-20 UTC — Kubuntu installer committed
+
+**BEACON COMPUTING INITIATIVE** | **Developer Seal: CJB-DEV-2026**
+
+- **Artifact:** `scripts/install-kubuntu.sh` on the recovery branch.
+- **Implementation:** User-account-portable Ubuntu/Kubuntu dependency setup, checksum verification against the repository manifest, component tests, headless PyQt6 GUI smoke check, unprivileged launchers, Plasma desktop entry and SHA-256 launcher receipt.
+- **Controls:** No forced overwrite of existing launchers; no data deletion, service enablement, model promotion, training or containment.
+- **Observed evidence:** GitHub contents API created the source file; commit `ef1ce248992d62a964987b94a46f84271e147f05`.
+- **Verification state:** Installer source **COMMITTED**; `bash -n`, actual Kubuntu apt install, test suite and GUI smoke **NOT RUN** in the target environment. Repository checksum manifest still requires updating.
+- **Decision:** **SOURCE COMMITTED / KUBUNTU INSTALL ACCEPTANCE HOLD**.
+
 ## Repository development history
 
 | UTC date | Activity | Recorded state |
