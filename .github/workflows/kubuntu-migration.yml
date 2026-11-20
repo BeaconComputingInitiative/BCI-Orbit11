@@ -1,0 +1,45 @@
+# BEACON COMPUTING INITIATIVE | Developer Seal: CJB-DEV-2026
+# SHA-256: repository SHA256SUMS
+name: Kubuntu migration source and synthetic restore
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out ORBIT11
+        uses: actions/checkout@v4
+      - name: Install source test dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends rsync python3-pyqt6 python3-pyqt6.qtsvg
+      - name: Verify source inventory and shell syntax
+        run: |
+          sha256sum --check --strict SHA256SUMS
+          bash -n scripts/install-kubuntu.sh scripts/export-migration.sh scripts/restore-migration.sh
+      - name: Test committed components with virtual offscreen GUI
+        run: |
+          bash scripts/install-kubuntu.sh --audit --source "$PWD"
+      - name: Offline synthetic export and restore round trip
+        run: |
+          set -Eeuo pipefail
+          WORK="$(mktemp -d)"
+          trap 'rm -rf -- "$WORK"' EXIT
+          mkdir -p -- "$WORK/input/datasets" "$WORK/input/checkpoints"
+          printf '%s\n' '{"event":"synthetic","authorized":true}' > "$WORK/input/datasets/sample.jsonl"
+          printf '%s\n' 'synthetic-model-placeholder' > "$WORK/input/checkpoints/model.txt"
+          bash scripts/export-migration.sh --source "$WORK/input" --destination "$WORK/backup"
+          test ! -e "$WORK/backup"
+          bash scripts/export-migration.sh --source "$WORK/input" --destination "$WORK/backup" --apply
+          test -f "$WORK/backup/SHA256SUMS"
+          ANCHOR="$(sha256sum "$WORK/backup/SHA256SUMS" | cut -d' ' -f1)"
+          bash scripts/restore-migration.sh --backup "$WORK/backup" --destination "$WORK/restore" --expected-manifest-sha256 "$ANCHOR"
+          test ! -e "$WORK/restore"
+          bash scripts/restore-migration.sh --backup "$WORK/backup" --destination "$WORK/restore" --expected-manifest-sha256 "$ANCHOR" --apply
+          cmp "$WORK/input/datasets/sample.jsonl" "$WORK/restore/roots/00-input/datasets/sample.jsonl"
+          cmp "$WORK/input/checkpoints/model.txt" "$WORK/restore/roots/00-input/checkpoints/model.txt"
+          printf '%s\n' 'PASS: synthetic data verified and restored, no host data touched'
