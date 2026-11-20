@@ -1,5 +1,26 @@
 # BCI-Orbit11
 
+## Kubuntu migration preparation — November 19, 2026
+
+**BEACON COMPUTING INITIATIVE | Developer Seal: CJB-DEV-2026**
+
+A source-only, account-portable Kubuntu bootstrap and private migration tooling
+are now staged for review: [Kubuntu migration guide](docs/KUBUNTU-MIGRATION.md),
+`scripts/install-kubuntu.sh`, `scripts/export-migration.sh`, and
+`scripts/restore-migration.sh`. A synthetic-only CI workflow checks their
+scripts and export/restore round trip.
+
+**Important:** The public GitHub tree does not contain the complete newer
+local-only ORBIT11 research workspaces, model checkpoints, or canonical
+datasets. No private datasets or secrets were uploaded by this update.
+The migration is complete **if and only if** the local artifacts are separately
+backed up, restored, reviewed and independently verified on the target machine.
+**Operational and production status remain HOLD.** No monitoring, training,
+containment or offensive capabilities are activated by the bootstrap.
+
+---
+
+
 **BEACON COMPUTING INITIATIVE**  
 **Developer Seal:** `CJB-DEV-2026`  
 **Project:** BCI Orbital Cyber Defense AI  
@@ -7,6 +28,40 @@
 **Current qualification:** **HOLD — research-only; production disabled**  
 **README content integrity:** SHA-256 manifest should be generated from the exported README bytes; GitHub blob SHA is not a SHA-256 digest.
 
+
+## Developer history update — November 15–19, 2026
+
+**BEACON COMPUTING INITIATIVE | Developer Seal: `CJB-DEV-2026`**
+
+The [Developers Log](DEVELOPERS_LOG.md#historical-development-entries-since-the-november-14-baseline) now contains **13 retrospective entries (H01–H13)** covering work reported since the prior November 14 engineering baseline. These entries are reconstructed from operator reports and existing repository documentation; they are **not new execution results, new training runs, independent reproductions, or proof of deployed capability**. The separate migration journal records GitHub commits made for the Kubuntu transition.
+
+| Entry | Reported work | Qualified interpretation |
+|---|---|---|
+| H13 · Nov 19 | Kubuntu migration and complete-project recovery initiated | Source recovery work prepared; private checkpoint and dataset backup **HOLD** |
+| H12 · Nov 18–19 | Enterprise Docker lab and agentic 50–200-endpoint workflow specified | Requirements captured; autonomous tool use and remediation **NOT VERIFIED** |
+| H11 · Nov 18 | SATELLITE1 Android formatter, local queue, proposed Tailscale/API transfer | Local source checks reported; remote intake and transport **NOT VERIFIED** |
+| H10 · Nov 18 | v1.8 one-pass Intake, Review, Runtime and Evaluation adapters | Engineering checks reportedly passed; **Intake/Review/Runtime HOLD, Evaluation NOT_RUN** |
+| H09 · Nov 17–18 | Admin GUI and training-control integration requirements | Existing console separate from newer local Control Center; end-to-end acceptance **HOLD** |
+| H08 · Nov 17 | v1.5 operational evidence qualification: 7,823 event records and provenance review | Reported integrity checks passed; authentication, timestamp and labels **HOLD** |
+| H07 · Nov 17 | Native v0.6 183,209-parameter pilot, 100 CPU updates | Offline **train-only**; no contrastive optimization or operational promotion |
+| H06 · Nov 17 | Contrastive v1.1–v1.4 synthetic evidence research | Narrow synthetic results; v1.2 abstention **FAIL**, broad neural value **NOT DEMONSTRATED** |
+| H05 · Nov 17 | Six-dataset, 1,664-record scoped lineage inventory | Structure inspected; training eligibility and lineage isolation **HOLD** |
+| H04 · Nov 16 | Artifact bindings and controlled-lab source-admission review | Integrity claimed locally; zero approved production training records |
+| H03 · Nov 15 | Phase 2 native checks, leakage and Q1.7–Q1.9 review | Historical engineering checks reported; supervision/leakage gates and training **HOLD** |
+| H02 · Nov 15 | Canonical v1.0.1 dataset accounting and offline Metasploit inventory | ~1.04M canonical records historically reported, **not uploaded or qualified** |
+| H01 · Nov 15 | Historical checkpoints and source/encoder audit | Historical source checks reported; encoder/source qualification **HOLD** |
+
+**Most recent local integration report (November 18):** v1.8 reportedly passed 47 engineering checks with 246 pinned files unchanged. Its intake, review and runtime stages remained HOLD, evaluation was NOT_RUN, and no eligible training cases or optimizer updates were established. These are local-workspace claims, not GitHub CI results.
+
+### Kubuntu source installer and data-preservation boundaries
+
+This recovery branch includes [Kubuntu recovery instructions](docs/KUBUNTU-MIGRATION.md), `scripts/install-kubuntu.sh` (dependencies, isolated user launchers, tests and Plasma GUI), `scripts/export-migration.sh` (private copy plus SHA-256 inventory) and `scripts/restore-migration.sh` (verify and stage backup). The [synthetic migration CI workflow](.github/workflows/kubuntu-migration.yml) is **configured, not evidence of a passing run** until its actual job results are checked.
+
+**Public GitHub has historical component source, not the complete current research installation.** Do not erase the original host or describe the migration as complete until local-only datasets, provenance, checkpoints, configurations and evaluation suites have been copied to a suitable private backup, verified against separately kept digests, restored and qualified on Kubuntu. No private operational telemetry or secrets were uploaded in this update.
+
+**Gate:** Complete recovery is PASS **if and only if** the restored artifacts, environment, model interfaces, dataset lineage and functional tests are verified independently. **PRODUCTION HOLD** continues. This GitHub change does not enable monitoring services, training, autonomous remediation, containment or live offensive assessment.
+
+---
 
 ## Latest research update — November 17, 2026
 
