@@ -20,7 +20,7 @@ jobs:
       - name: Verify source inventory and shell syntax
         run: |
           sha256sum --check --strict SHA256SUMS
-          bash -n scripts/install-kubuntu.sh scripts/export-migration.sh scripts/restore-migration.sh
+          for script in scripts/install-kubuntu.sh scripts/export-migration.sh scripts/restore-migration.sh; do bash -n "$script"; done
       - name: Test committed components with virtual offscreen GUI
         run: |
           bash scripts/install-kubuntu.sh --audit --source "$PWD"
