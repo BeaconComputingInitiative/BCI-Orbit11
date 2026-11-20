@@ -149,6 +149,21 @@ Next authorized step:
 - **Operational concern:** Use the separate operator incident playbook. Git history edits do not recover a running sensor or firewall.
 - **Training-data cleanup:** Purge eligible transient copies only after verified training, retention approval and legal-hold checks. Original forensic evidence must remain protected.
 
+## Migration execution journal (newest entries appended chronologically)
+
+### Entry 001 — 2026-11-20 UTC — Recovery inventory and scope
+
+**BEACON COMPUTING INITIATIVE** | **Developer Seal: CJB-DEV-2026**
+
+- **Task:** Begin source-preserving migration from Kali to Kubuntu; inspect the public GitHub repository before changing the old computer.
+- **Repository / branch:** `BeaconComputingInitiative/BCI-Orbit11` / `kubuntu-recovery-20261119`.
+- **Observed source inventory:** Public `main` tree contained 183 entries, including the existing host, neural, expansion, rate-aware, and console source families. Latest v0.6–v1.8 research workspaces, local canonical datasets, private operational evidence, and local checkpoints were **not found in this GitHub tree**.
+- **Privacy boundary:** No local machine or private dataset access is available through the GitHub connector. Do not assert that private research data was backed up, reproduced, or published. Use a separate encrypted or otherwise access-controlled backup.
+- **Observed action:** Inspected repository metadata, tree, README, development guide, component installation scripts, integrity workflow, and existing developer log. Created a migration work branch.
+- **Checks:** Repository contents and permissions inspected remotely; full checkout SHA-256 verification, build, GUI launch, and Kubuntu acceptance **NOT RUN**.
+- **Decision:** **INVENTORY PASS / LOCAL ARTIFACT PRESERVATION HOLD / PRODUCTION HOLD**.
+- **Next:** Add account-portable Kubuntu installer, export/restore procedure, and reproducible verification workflow; update the log after each completed action.
+
 ## Repository development history
 
 | UTC date | Activity | Recorded state |
