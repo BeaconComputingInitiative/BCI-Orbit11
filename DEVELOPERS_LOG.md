@@ -175,6 +175,17 @@ Next authorized step:
 - **Verification state:** Installer source **COMMITTED**; `bash -n`, actual Kubuntu apt install, test suite and GUI smoke **NOT RUN** in the target environment. Repository checksum manifest still requires updating.
 - **Decision:** **SOURCE COMMITTED / KUBUNTU INSTALL ACCEPTANCE HOLD**.
 
+### Entry 003 — 2026-11-20 UTC — Private migration exporter committed
+
+**BEACON COMPUTING INITIATIVE** | **Developer Seal: CJB-DEV-2026**
+
+- **Artifact:** `scripts/export-migration.sh` on the recovery branch.
+- **Implementation:** Read-only default preview; operator-supplied destination and optional roots; private `rsync` copy; post-copy checksum comparison; SHA-256 inventory and independently recordable digest of the inventory.
+- **Controls:** Reject source/destination overlap and pre-existing backup path; never follow symlinks, erase source data, publish private files or activate services.
+- **Observed evidence:** Source file created successfully through GitHub contents API at commit `de6cc592f3246b0b3c05a904f756d0da97d73da6`.
+- **Verification state:** Source **COMMITTED**. No actual old-host read, backup disk inventory, export, copied dataset verification, or restore test has occurred. All private datasets/checkpoints remain **NOT BACKED UP BY THIS SESSION**.
+- **Decision:** **SOURCE COMMITTED / PRIVATE DATA EXPORT HOLD**.
+
 ## Repository development history
 
 | UTC date | Activity | Recorded state |
