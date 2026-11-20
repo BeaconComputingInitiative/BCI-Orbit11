@@ -186,6 +186,17 @@ Next authorized step:
 - **Verification state:** Source **COMMITTED**. No actual old-host read, backup disk inventory, export, copied dataset verification, or restore test has occurred. All private datasets/checkpoints remain **NOT BACKED UP BY THIS SESSION**.
 - **Decision:** **SOURCE COMMITTED / PRIVATE DATA EXPORT HOLD**.
 
+### Entry 004 — 2026-11-20 UTC — Private restore and hash-verification tool committed
+
+**BEACON COMPUTING INITIATIVE** | **Developer Seal: CJB-DEV-2026**
+
+- **Artifact:** `scripts/restore-migration.sh` on the recovery branch.
+- **Implementation:** Preview-first restore; validate all manifest entries and relative paths, compare per-file SHA-256, optionally check the independently recorded manifest digest, stage payload into a new destination and compare copied files.
+- **Controls:** Reject existing destination, path overlap, missing manifest files, unlisted payload files, symlinks and mismatched checksums. Never merge into live ORBIT11 state.
+- **Observed evidence:** GitHub source commits `eb3c5706fd03acb58e25c28f47df08fcae15a0b8` and corrective update `b4335c069f42ddb9733f121bca3f4b40e15c9bc1`.
+- **Verification state:** Source **COMMITTED**; no Kubuntu restore, target-disk comparison or model compatibility verification performed.
+- **Decision:** **RESTORE SOURCE COMMITTED / RESTORE ACCEPTANCE HOLD**.
+
 ## Repository development history
 
 | UTC date | Activity | Recorded state |
