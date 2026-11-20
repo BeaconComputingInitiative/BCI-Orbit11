@@ -207,6 +207,15 @@ Next authorized step:
 - **Observed evidence:** Documentation file successfully committed on the recovery branch; user disk contents and available backup space **NOT INSPECTED**.
 - **Decision:** **DOCUMENTATION COMMITTED / COMPLETE RESTORATION HOLD**.
 
+### Entry 006 — 2026-11-20 UTC — CI verification workflow committed
+
+**BEACON COMPUTING INITIATIVE** | **Developer Seal: CJB-DEV-2026**
+
+- **Artifact:** `.github/workflows/kubuntu-migration.yml`; commits `90b6d4fbbd133e4e48c8b9f741230b0e9722ee38` and `07b2832f05e87d60ddde8f2585864071b7f15e63`.
+- **Checks configured:** Repository SHA-256 manifest, per-script Bash syntax checks, committed source component suite, offscreen GUI smoke, and synthetic export/restore with manifest-anchor and byte-level round-trip comparison.
+- **Observed evidence:** Workflow source committed. GitHub Actions run results have **NOT YET BEEN OBSERVED**; no actual Kubuntu recovery or real data migration has been performed.
+- **Decision:** **CI WORKFLOW SOURCE COMMITTED / CI EXECUTION HOLD / PRODUCTION HOLD**.
+
 ## Repository development history
 
 | UTC date | Activity | Recorded state |
