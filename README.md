@@ -1,5 +1,26 @@
 # BCI-Orbit11
 
+## Kubuntu migration preparation — November 19, 2026
+
+**BEACON COMPUTING INITIATIVE | Developer Seal: CJB-DEV-2026**
+
+A source-only, account-portable Kubuntu bootstrap and private migration tooling
+are now staged for review: [Kubuntu migration guide](docs/KUBUNTU-MIGRATION.md),
+`scripts/install-kubuntu.sh`, `scripts/export-migration.sh`, and
+`scripts/restore-migration.sh`. A synthetic-only CI workflow checks their
+scripts and export/restore round trip.
+
+**Important:** The public GitHub tree does not contain the complete newer
+local-only ORBIT11 research workspaces, model checkpoints, or canonical
+datasets. No private datasets or secrets were uploaded by this update.
+The migration is complete **if and only if** the local artifacts are separately
+backed up, restored, reviewed and independently verified on the target machine.
+**Operational and production status remain HOLD.** No monitoring, training,
+containment or offensive capabilities are activated by the bootstrap.
+
+---
+
+
 **BEACON COMPUTING INITIATIVE**  
 **Developer Seal:** `CJB-DEV-2026`  
 **Project:** BCI Orbital Cyber Defense AI  
