@@ -29,6 +29,23 @@ containment or offensive capabilities are activated by the bootstrap.
 **README content integrity:** SHA-256 manifest should be generated from the exported README bytes; GitHub blob SHA is not a SHA-256 digest.
 
 
+## Recovery ledger and qualification status
+
+**BEACON COMPUTING INITIATIVE | Developer Seal: `CJB-DEV-2026`**
+
+| Track | Evidence recorded in this branch | Present status |
+|---|---|---|
+| Development history | [13 historical entries H01–H13](DEVELOPERS_LOG.md#historical-development-entries-since-the-november-14-baseline), spanning November 15–19 | Retrospective; operator-reported outcomes are not independent reruns |
+| Kubuntu migration execution | [Seven numbered GitHub development entries](DEVELOPERS_LOG.md#migration-execution-journal-newest-entries-appended-chronologically) | Recovery scripts/documentation committed; target-host acceptance **NOT RUN** |
+| Existing source distribution | Host, neural, expansion, rate-aware, and PyQt6 console components from earlier releases | Source available; not equivalent to latest local ORBIT11 runtime |
+| Native research datasets and checkpoints | Historical counts, lineage issues, local checkpoint references | Required local-only bytes **NOT UPLOADED / NOT RESTORED** |
+| v1.8 agentic integration | Local adapter engineering results, including the 47-test report | Intake/Review/Runtime **HOLD**; Evaluation **NOT_RUN**; autonomous remediation **NOT VERIFIED** |
+| Operational deployment | Existing approval gates and known source visibility limitations | Model promotion, production, training authorization and containment **HOLD** |
+
+**Read in order:** [Developer's Log](DEVELOPERS_LOG.md) for individual milestones → [Kubuntu migration guide](docs/KUBUNTU-MIGRATION.md) for backup/restore → [Validation criteria](docs/VALIDATION.md) for acceptance boundaries. The migration instructions must not be interpreted as permission to delete the original machine's data.
+
+---
+
 ## Developer history update — November 15–19, 2026
 
 **BEACON COMPUTING INITIATIVE | Developer Seal: `CJB-DEV-2026`**
@@ -63,7 +80,7 @@ This recovery branch includes [Kubuntu recovery instructions](docs/KUBUNTU-MIGRA
 
 ---
 
-## Latest research update — November 17, 2026
+## Previously documented research update — November 17, 2026
 
 **Status:** **RESEARCH_ONLY · Operational qualification HOLD · PRODUCTION HOLD**  
 **Evidence boundary:** The results below are **reported outcomes from local Kali/ORBIT11 workspaces**, supplied by the project operator. They are not GitHub CI results, not independently reproduced by this repository update, and do not mean the newer v0.6–v1.4 research workspaces or private checkpoints have been committed here.
@@ -304,6 +321,7 @@ building blocks. They do not satisfy all requirements in the target specificatio
 
 | Goal | Read |
 |---|---|
+| Review the development milestones and status history | [Developers Log](DEVELOPERS_LOG.md) |
 | Understand components and trust boundaries | [Architecture](docs/ARCHITECTURE.md) |
 | Understand the actual neural model | [Model card](docs/MODEL-CARD.md) |
 | Run tests and launch from source | [Getting started](docs/GETTING-STARTED.md) |
