@@ -149,6 +149,119 @@ Next authorized step:
 - **Operational concern:** Use the separate operator incident playbook. Git history edits do not recover a running sensor or firewall.
 - **Training-data cleanup:** Purge eligible transient copies only after verified training, retention approval and legal-hold checks. Original forensic evidence must remain protected.
 
+## Historical development entries since the November 14 baseline
+
+**BEACON COMPUTING INITIATIVE** | **Developer Seal: CJB-DEV-2026**
+
+These are retrospective, individually dated entries reconstructed from operator-supplied project logs, reports and the repository's November 17 README, not newly executed experiments. A local test or SHA-256 assertion is described as reported unless its exact files were independently checked in this GitHub update. Historical FAIL/HOLD states are preserved. Development dates below are the dates of the referenced work; exact UTC timestamps were not established for every event.
+
+### H01 — November 15, 2026 — Historical model and source inventory qualified for review
+
+- Reported local source discovery identified multiple 100-epoch and evidence experiment checkpoints, including a pair of byte-identical multicorpus model files (reported SHA-256 88116790044ce300fd3caaa6452f4f254770d021e1ab0b635ee9ffc3aa00f99f). Byte identity is not an independent training replication.
+- Q1.4 inspected 572 files and 21 candidates and reported 12/12 tests PASS; source/encoder verification remained HOLD_UNVERIFIED_SOURCE_AND_ENCODER. Neural architecture and supervised heads in that native multicorpus track must not be conflated with the earlier 12-feature host autoencoder.
+- Source integrity and structural checks were not an operational training or deployment authorization.
+
+**Decision:** HISTORICAL ENGINEERING CHECKS REPORTED PASS; SOURCE/ENCODER QUALIFICATION HOLD.
+
+### H02 — November 15, 2026 — Canonical dataset accounting and Metasploit research inventory
+
+- Reported canonical dataset conversion covered 24 source datasets across 68 streams and 108 locations, growing to approximately 1,042,771 records in v1.0.1; 791 records were rejected and overlapping/aliased source groups required isolation review. These counts are historical operator reports, not a freshly reproduced GitHub dataset.
+- The offline Metasploit research inventory contained 100 modules (30 exploit, 30 auxiliary, 20 post, 10 payload, 5 encoder, 3 evasion, 2 NOP). Structure and supervision JSONL presence were reported; legal provenance and eligible supervision did not follow from structural validity.
+- Training readiness retained zero approved eligible records; repairable and excluded groups still required separate source-hash and provenance resolution.
+
+**Decision:** STRUCTURAL INVENTORY REPORTED PASS; ADMISSION AND PRODUCTION HOLD.
+
+### H03 — November 15, 2026 — Native cognitive-core qualification, leakage gates and staged tests
+
+- Native Phase 2A historical inference and equivalence checks reportedly passed; the 24 comparisons yielded 144/144 exact head-label agreements. Phase 2B native candidate was built but remained UNTRAINED. The engineering Phase 2C v0.4.1 reported 21 passing regressions while training remained BLOCKED (zero approved records).
+- Q1.7 flagged possible target-label leakage into native model input. Q1.8 permitted structural-only inspection (HOLD_ONLY_STRUCTURAL_INSPECTION). An offline Q1.9A structural check passed but native trainer discovery and evidence mapping were incomplete.
+- Frozen capability-constrained planning and staged-hypothesis diagnostics did not establish autonomous tool planning or unfamiliar-incident resolution. Earlier failed evaluations remain failures.
+
+**Decision:** ENGINEERING CHECKS REPORTED PASS; NEW TRAINING NOT_RUN/BLOCKED; MODEL PROMOTION HOLD.
+
+### H04 — November 16, 2026 — Release artifact bindings and independent source-admission review
+
+- A local package report described eight verified artifact hashes and 57 evidence bindings, with zero records qualified for training.
+- Five controlled-lab proposals and reproducible synthetic candidates were distinguished from authenticated operational examples; no independent reviewer receipt or trustworthy ground truth admitted records for production training.
+- Existing original checkpoints, source manifests and forensic evidence were to be preserved; no cleanup or silent relabeling authorized.
+
+**Decision:** PACKAGE INTEGRITY REPORTED PASS; AUTHENTICATED EVIDENCE ADMISSION HOLD.
+
+### H05 — November 17, 2026 — Six-dataset schema and root-lineage audit
+
+- Reported inventory: six datasets, 1,664 records, and no missing source references in that scoped audit. It was not a total recount of the full canonical corpus.
+- Admission flags remained nonproduction: 864 next_action cases production_qualified=false; 400 scenario_cards approved_for_training=false; 100 unified_modules false; 100 training_procedures RESEARCH_ONLY.
+- Only one distinct root_episode_id appeared among the 864 next_action records. Independence of train/validation/test partitions, source provenance, and schema contracts remained unresolved.
+
+**Decision:** SCOPED STRUCTURE PASS REPORTED; TRAINING QUALIFICATION HOLD.
+
+### H06 — November 17, 2026 — Contrastive evidence research v1.1–v1.4
+
+- v1.1 researched 112 synthetic episodes and 448 pairs (112 positive, 224 negative and 112 unresolved/loss-masked). An initial 96-update experiment selected step 56, then missed frozen recall targets; a repaired checkpoint matched narrow synthetic patterns, not broad generalization.
+- v1.2 produced a synthetic binary-classification result but abstained on 0% of ambiguous cases, failing that safety requirement.
+- v1.3 required evidence-sufficiency checks before neural advice, with a frozen synthetic challenge of 36 positive, 36 hard-negative and 72 ambiguous cases. Its reported abstention improvement came from deterministic lineage checks, not incremental neural value.
+- v1.4 compared deterministic-only, neural-only and hybrid outcomes on 72 narrow evidence-qualified synthetic cases representing only six model-facing patterns; all agreed, with zero demonstrated neural improvements.
+
+**Decision:** NARROW SYNTHETIC ENGINEERING RESULTS; GENERALIZATION AND PRODUCTION HOLD.
+
+### H07 — November 17, 2026 — Native v0.6 CPU pilot isolated from production
+
+- A separate local four-objective native candidate was reported with 183,209 parameters; its 100-CPU-update train-only pilot used deduplicated candidates from a verified 50K source and reduced 796 links to 98 effective cases.
+- Temporal, relationship and reconstruction training losses reportedly decreased; the contrastive objective had zero justified negative components and was not trained in that pilot.
+- Reported checkpoint SHA-256 6490e8d89883d3590311dea5b8ff675e2b89af2a906005c289c75b0a6be691b7 refers to a local artifact not confirmed committed to GitHub. No independent held-out operational generalization was demonstrated.
+
+**Decision:** OFFLINE TRAIN-ONLY PILOT REPORTED; PROMOTION AND PRODUCTION HOLD.
+
+### H08 — November 17, 2026 — Operational evidence qualification v1.5 and provenance gaps
+
+- Reported read-only qualification inspected 7,823 SQLite events; all 6,940 events matching an earlier audit were byte-exact. The SQLite quick check, event hash chain and 318 sealed aggregate-window hashes reportedly passed.
+- Timestamp anomalies included four reversals explained by clock-step evidence and six unexplained reversals in the scoped account. Missing authenticated execution/session IDs, independent review receipts and reliable source attribution prevented confident research admission.
+- A later reconciliation task reported inaccessible legacy databases under /home/chance, so overlap and membership were still unverified. A tool passing integrity tests is not proof of complete source access.
+
+**Decision:** SOURCE INTEGRITY REPORTED PASS; OPERATIONAL LABEL/PROVENANCE QUALIFICATION HOLD.
+
+### H09 — November 17–18, 2026 — Operator GUI and gated training control design
+
+- The operator requested an admin GUI integrating dataset verification, training eligibility, runtime status and the actual wired functionality rather than decorative controls.
+- A reported Control Center v0.2.0 design required explicit TRAIN CANDIDATE confirmation, current dataset/training approval artifacts, and repeated CLI eligibility/context/integrity checks before any train candidate could start.
+- Existing GitHub console v0.8.3 is a historical PyQt6 component; the newer Control Center packages were local downloads and are not established as integrated or accepted by the GitHub source tree.
+
+**Decision:** CONTROL DESIGN DOCUMENTED; END-TO-END GUI/NEW TRAINER ACCEPTANCE HOLD.
+
+### H10 — November 18, 2026 — ORBIT11 v1.8 one-pass integration evidence
+
+- Four repository-local adapter stages were reported to run in sequence: Intake, Review, Runtime and Evaluation. The integration run was identified as 20261118T190255Z-9838e262.
+- Reported 47 tests passed, with 246 pinned files unchanged. Intake, Review and Runtime remained HOLD; Evaluation was NOT_RUN; no cases were eligible for training and no optimizer updates or operational forwards occurred.
+- The native trainer refused admission as designed. No baseline-relative neural value, autonomous incident investigation, live remediation or production approval was established.
+
+**Decision:** INTEGRATION ENGINEERING PASS REPORTED; INTAKE/REVIEW/RUNTIME/EVALUATION AND PRODUCTION HOLD.
+
+### H11 — November 18, 2026 — SATELLITE1 telemetry-to-ORBIT11 intake contract
+
+- SATELLITE1 was designated the separate Android/Termux mobile telemetry formatter and transport system, with APOGEE/PARALLAX-compatible schema formatting and a proposed Tailscale-protected API ingestion path.
+- Local Android check reported source SHA-256 verification for satellite1_formatter.py and satellite1_queue.py and one pending queue record; actual network transmission was explicitly NOT VERIFIED.
+- Tailscale was not installed on the Android device at that point. Neither a secure transport handshake nor accepted ORBIT11-side ingestion is established by formatter hashes.
+
+**Decision:** LOCAL FORMAT/QUEUE SOURCE CHECKS REPORTED; REMOTE INGESTION HOLD.
+
+### H12 — November 18–19, 2026 — Enterprise lab and agentic workflow requirements
+
+- The operator requested a Docker enterprise scenario simulator scaling from 50 to 200 endpoints in increments of 25, with live model activity display and a 59-workstation test scenario.
+- The proposed agentic flow has to recognize incidents, form investigation hypotheses, select authorized tools, propose reversible remediation and summarize outcomes under approval gates.
+- Previously reported classification and evidence-abstention results do not prove tool-use planning, autonomous remediation, agent reliability or this Docker environment was built and accepted.
+
+**Decision:** REQUIREMENTS CAPTURED; FULL AGENTIC LAB IMPLEMENTATION AND EVALUATION NOT VERIFIED.
+
+### H13 — November 19, 2026 — Machine migration and reproducibility recovery initiated
+
+- The operator elected a new Kubuntu workstation environment and requested GitHub publication, preservation of every required reconstructable dataset/artifact, and a complete installer.
+- A public GitHub inventory confirmed five older versioned component families and documentation but not the latest private local research checkpoints and operational datasets.
+- Private disk export, restored trained-model validation, Qt acceptance on the new Kubuntu machine, production activation and operator-approved training were not performed by the GitHub connector.
+
+**Decision:** MIGRATION PLAN ACTIVE; LOCAL DATA PRESERVATION, RECREATION AND PRODUCTION HOLD.
+
+---
+
 ## Migration execution journal (newest entries appended chronologically)
 
 ### Entry 001 — 2026-11-20 UTC — Recovery inventory and scope
