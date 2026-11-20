@@ -216,6 +216,16 @@ Next authorized step:
 - **Observed evidence:** Workflow source committed. GitHub Actions run results have **NOT YET BEEN OBSERVED**; no actual Kubuntu recovery or real data migration has been performed.
 - **Decision:** **CI WORKFLOW SOURCE COMMITTED / CI EXECUTION HOLD / PRODUCTION HOLD**.
 
+### Entry 007 — 2026-11-20 UTC — Repository README migration status updated
+
+**BEACON COMPUTING INITIATIVE** | **Developer Seal: CJB-DEV-2026**
+
+- **Artifact:** Top-level `README.md`; commit `056af97be6f1e053bd0e45e5c7b75ebf87d51e11`.
+- **Change:** Linked the Kubuntu recovery guide and three migration scripts; documented that the public repository contains historical, not necessarily current, native research components.
+- **Evidence boundary:** No upload of actual private datasets, local checkpoint payloads, machine secrets, or privileged runtime configuration was performed.
+- **Verification state:** README GitHub update **COMMITTED**; SHA-256 manifest update and CI checks still pending.
+- **Decision:** **DOCUMENTATION COMMITTED / COMPLETE MACHINE RECONSTRUCTION HOLD**.
+
 ## Repository development history
 
 | UTC date | Activity | Recorded state |
