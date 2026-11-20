@@ -62,7 +62,7 @@ expected = {}
 for line in raw.decode('utf-8').splitlines():
     if not line:
         continue
-    match = re.fullmatch(r'([0-9a-f]{64})  (roots/[^\\n]+)', line)
+    match = re.fullmatch(r'([0-9a-f]{64})  (roots/.+)', line)
     if not match:
         raise SystemExit('HOLD: invalid backup manifest row')
     digest, relative = match.groups()
